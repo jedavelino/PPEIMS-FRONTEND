@@ -1,4 +1,42 @@
 body {
 	background-color: #ECF0F1;
+	font-family: 'Roboto';
+}
+
+.page-dashboard {
 	padding-left: 230px;
+}
+
+/* Button */
+.btn {
+	border: 0;
+	border-radius: 0;
+}
+.btn.btn-primary {
+	background-color: #0469A5;
+}
+.btn.btn-primary:hover {
+	background-color: #007DC7;
+}
+
+/* Form */
+.form-control {
+	border-radius: 0;
+}
+.input-group-addon {
+	border-radius: 0;
+}
+
+/* Pagination */
+.pagination {
+	border-radius: 0;
+}
+.pagination>li:first-child>a,
+.pagination>li:last-child>a {
+	border-radius: 0;
+}
+
+/* Section */
+.section--margin-bottom-15 {
+	margin-bottom: 15px;
 }
