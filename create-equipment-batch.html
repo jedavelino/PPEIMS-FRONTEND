@@ -72,147 +72,125 @@
 					</div>
 				</div>
 
-				<div class="section">
+				<section class="section">
 					<div class="row">
 						<div class="col-md-12">
-							<div class="page-heading clearfix">
-								<h2 class="page-heading__title page-heading__title--float-left">Create Equipment Batch</h2>
-								<a href="#" class="page-heading__print"><i class="glyphicon glyphicon-print"></i> Print</a>
+							<div class="page-heading">
+								<h2 class="page-heading__title">Create Equipment Batch</h2>
 							</div>
 						</div>
 					</div>
-				</div>
-
-				<div class="section">
-					<div class="well well--white">
-						<div class="row">
-							<div class="col-md-12">
-								<h4>Equipment Batch: #001</h4>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-3">
-								<div class="form-group">
-									<label for="equipment">Equipment</label>
-									<select class="form-control" id="equipment">
-										<option value="">Hard Hat (Yellow)</option>
-										<option value="">Hard Hat (Red)</option>
-										<option value="">Hard Hat (Blue)</option>
-										<option value="">Ear Plugs</option>
-										<option value="">Gloves</option>
-										<option value="">Eye Shield</option>
-									</select>
-								</div>
-							</div>
-							<div class="col-md-1">
-								<div class="form-group">
-									<label for="quantity">Quantity</label>
-									<input type="number" class="form-control" placeholder="0">
-								</div>
-							</div>
-							<div class="col-md-2">
-								<div class="form-group">
-									<label for="">Action</label>
-									<div>
-										<a href="#" class="btn btn-primary">Add New Equipment</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<button type="submit" class="btn btn-primary">Submit</button>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="section">
 					<div class="row">
-						<div class="col-md-12">
-							<div class="panel panel-default">
-								<!-- <div class="panel-heading panel-heading--white clearfix">
-									<a href="#" class="pull-right"><i class="glyphicon glyphicon-print"></i> Print</a>
-								</div> -->
+						<div class="col-md-3">
+							<div class="panel panel--dashboard">
+								<div class="panel-heading panel-heading--white">
+									<h4>Equipment Batch: #001</h4>
+								</div>
 								<div class="panel-body">
-									<div class="row">
-										<div class="col-md-12">
-											<table class="table table-condensed table--no-pagination">
-												<thead>
-													<tr>
-														<th>#</th>
-														<th>Item</th>
-														<th>ID</th>
-														<th>Type</th>
-														<th>Brand</th>
-														<th>Action</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<th scope="row">1</th>
-														<td>Hard Hat (Yellow)</td>
-														<td>001-001</td>
-														<td>Type A</td>
-														<td>Brand A</td>
-														<td>
-															<a href="#" class="btn btn-success btn-xs">Edit</a>
-															<a href="#" class="btn btn-danger btn-xs">Delete</a>
-														</td>
-													</tr>
-													<tr>
-														<th scope="row">2</th>
-														<td>Gloves</td>
-														<td>002-002</td>
-														<td>Type B</td>
-														<td>Brand C</td>
-														<td>
-															<a href="#" class="btn btn-success btn-xs">Edit</a>
-															<a href="#" class="btn btn-danger btn-xs">Delete</a>
-														</td>
-													</tr>
-													<tr>
-														<th scope="row">3</th>
-														<td>Eye Shield</td>
-														<td>003-003</td>
-														<td>Type C</td>
-														<td>Brand C</td>
-														<td>
-															<a href="#" class="btn btn-success btn-xs">Edit</a>
-															<a href="#" class="btn btn-danger btn-xs">Delete</a>
-														</td>
-													</tr>
-													<tr>
-														<th scope="row">4</th>
-														<td>Ear Plugs</td>
-														<td>004-004</td>
-														<td>Type D</td>
-														<td>Brand D</td>
-														<td>
-															<a href="#" class="btn btn-success btn-xs">Edit</a>
-															<a href="#" class="btn btn-danger btn-xs">Delete</a>
-														</td>
-													</tr>
-													<tr>
-														<th scope="row">5</th>
-														<td>Respirators</td>
-														<td>005-005</td>
-														<td>Type E</td>
-														<td>Brand E</td>
-														<td>
-															<a href="#" class="btn btn-success btn-xs">Edit</a>
-															<a href="#" class="btn btn-danger btn-xs">Delete</a>
-														</td>
-													</tr>
-												</tbody>
-											</table>	
+									<div class="form-group">
+										<label for="equipment">Equipment</label>
+										<select class="form-control" id="equipment">
+											<option value="" disabled selected>Select equipment</option>
+											<option value="">Hard Hat (Red)</option>
+											<option value="">Hard Hat (Blue)</option>
+											<option value="">Ear Plugs</option>
+											<option value="">Gloves</option>
+											<option value="">Eye Shield</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label for="quantity">Quantity</label>
+										<input type="number" class="form-control" placeholder="0">
+									</div>
+									<button type="submit" class="btn btn-primary btn-block btn-lg">Add</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-9">
+								<div class="panel panel--dashboard">
+									<div class="panel-heading panel-heading--white">
+										<h4>Equipment Batch Cart</h4>
+									</div>
+									<div class="panel-body">
+										<div class="row">
+											<div class="col-md-12">
+												<table class="table table-condensed table--no-pagination">
+													<thead>
+														<tr>
+															<th>#</th>
+															<th>Item</th>
+															<th>ID</th>
+															<th>Type</th>
+															<th>Brand</th>
+															<th>Action</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<th scope="row">1</th>
+															<td>Hard Hat (Yellow)</td>
+															<td>001-001</td>
+															<td>Type A</td>
+															<td>Brand A</td>
+															<td>
+																<a href="#" class="btn btn-success btn-xs">Edit</a>
+																<a href="#" class="btn btn-danger btn-xs">Delete</a>
+															</td>
+														</tr>
+														<tr>
+															<th scope="row">2</th>
+															<td>Gloves</td>
+															<td>002-002</td>
+															<td>Type B</td>
+															<td>Brand C</td>
+															<td>
+																<a href="#" class="btn btn-success btn-xs">Edit</a>
+																<a href="#" class="btn btn-danger btn-xs">Delete</a>
+															</td>
+														</tr>
+														<tr>
+															<th scope="row">3</th>
+															<td>Eye Shield</td>
+															<td>003-003</td>
+															<td>Type C</td>
+															<td>Brand C</td>
+															<td>
+																<a href="#" class="btn btn-success btn-xs">Edit</a>
+																<a href="#" class="btn btn-danger btn-xs">Delete</a>
+															</td>
+														</tr>
+														<tr>
+															<th scope="row">4</th>
+															<td>Ear Plugs</td>
+															<td>004-004</td>
+															<td>Type D</td>
+															<td>Brand D</td>
+															<td>
+																<a href="#" class="btn btn-success btn-xs">Edit</a>
+																<a href="#" class="btn btn-danger btn-xs">Delete</a>
+															</td>
+														</tr>
+														<tr>
+															<th scope="row">5</th>
+															<td>Respirators</td>
+															<td>005-005</td>
+															<td>Type E</td>
+															<td>Brand E</td>
+															<td>
+																<a href="#" class="btn btn-success btn-xs">Edit</a>
+																<a href="#" class="btn btn-danger btn-xs">Delete</a>
+															</td>
+														</tr>
+													</tbody>
+												</table>	
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
+				</section>
 			</div>
 		</div>
 	</div>

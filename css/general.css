@@ -22,9 +22,17 @@ body {
 /* Form */
 .form-control {
 	border-radius: 0;
+	-webkit-appearance: none;
 }
-.input-group-addon {
+select.form-control {
 	border-radius: 0;
+	background-image: url(../images/select-arrow.png);
+	background-repeat: no-repeat;
+	background-position: 98% center;
+}
+.input-group-addon--dashboard {
+	border-radius: 0;
+	background-color: transparent;
 }
 
 /* Pagination */
