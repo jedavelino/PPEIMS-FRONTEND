@@ -100,7 +100,7 @@
 }
 
 /* Pagination */
-.panel .table-pagination {
+/*.panel .table-pagination {
 	text-align: center;
 	border-top: 1px solid #ececec;
 	padding-top: 20px;
@@ -108,15 +108,16 @@
 .panel .table-pagination .pagination {
 	margin-bottom: 0;
 	margin-top: 0;
-}
+}*/
 
 /* Page */
-.content .page-heading {
+/*.content .page-heading {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
 .content .page-heading .page-heading__title {
 	margin-top: 0;
+	margin-bottom: 25px;
 	font-size: 25px;
 }
 .content .page-heading .page-heading__title--float-left {
@@ -125,4 +126,59 @@
 .content .page-heading .page-heading__print {
 	float: right;
 	color: #555;
+}*/
+
+/* Info Box */
+.info-box {
+	background-color: #fff;
+	border-radius: 4px;
+	margin-bottom: 20px;
+}
+.info-box--centered {
+	text-align: center;
+}
+.info-box-head {
+	padding: 10px;
+	border-bottom: 1px solid #ececec;
+}
+.info-box-head h4,
+.info-box-head p {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+.info-box-body {
+	padding: 5px 10px;
+}
+.info-box-body__count {
+	font-size: 50px;
+}
+
+/* Info Box (Blue) */
+.info-box--blue {
+	background-color: #a4d2ee;
+}
+.info-box--blue h4,
+.info-box--blue p,
+.info-box--blue span {
+	color: #1D628B;
+}
+.info-box--blue .info-box-head {
+	border-bottom-color: #4589B0;
+}
+
+/* Info Box (Green) */
+.info-box--green {
+	background-color: #9fe0d3;
+}
+.info-box--green h4,
+.info-box--green p,
+.info-box--green span {
+	color: #0B8389;
+}
+.info-box--green .info-box-head {
+	border-bottom-color: #0B8389;
+}
+
+.margin-bottom-20 {
+	margin-bottom: 20px;
 }
