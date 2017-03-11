@@ -99,7 +99,8 @@
 												<th>Reorder Point</th>
 												<th>Expiration Date</th>
 												<th>Remarks</th>
-												<th>Action</th>
+												<th>Add/Subtract Stock</th>
+												<th>Delete Entry</th>
 											</tr>
 										</thead>
 										<tbody>
@@ -111,11 +112,14 @@
 												<td>0 pcs</td>
 												<td>79 pcs</td>
 												<td>10</td>
-												<td>01-01-2018</td>
+												<td>Jan. 1, 2018</td>
 												<td>Lorem ipsum dolor sit amet.</td>
 												<td>
-													<a href="#" class="btn btn-default btn-xs" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Update</span></a>
-													<a href="#" class="btn btn-default btn-xs" data-toggle="tooltip" data-placement="top" title="Remove this item"><i class="glyphicon glyphicon-remove" aria-hidden="true"></i> <span class="sr-only">Remove</span></a>
+													<a href="#" class="btn btn-default btn-xs" data-toggle="modal" data-target="#addModal"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i> <span class="sr-only">Add Stock</span></a>
+													<a href="#" class="btn btn-default btn-xs" data-toggle="modal" data-target="#subtractModal"><i class="glyphicon glyphicon-minus" aria-hidden="true"></i> <span class="sr-only">Subtract Stock</span></a>
+												</td>
+												<td>
+													<a href="#" class="btn btn-default btn-xs" data-toggle="tooltip" data-placement="top" title="Remove this item"><i class="glyphicon glyphicon-trash" aria-hidden="true"></i> <span class="sr-only">Remove</span></a>
 												</td>
 											</tr>
 											<tr>
@@ -126,11 +130,14 @@
 												<td>0 pcs</td>
 												<td>45 pcs</td>
 												<td>10</td>
-												<td>01-01-2018</td>
+												<td>Jan. 1, 2018</td>
 												<td></td>
 												<td>
-													<a href="#" class="btn btn-default btn-xs" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Update</span></a>
-													<a href="#" class="btn btn-default btn-xs" data-toggle="tooltip" data-placement="top" title="Remove this item"><i class="glyphicon glyphicon-remove" aria-hidden="true"></i> <span class="sr-only">Remove</span></a>
+													<a href="#" class="btn btn-default btn-xs" data-toggle="modal" data-target="#addModal"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i> <span class="sr-only">Add Stock</span></a>
+													<a href="#" class="btn btn-default btn-xs" data-toggle="modal" data-target="#subtractModal"><i class="glyphicon glyphicon-minus" aria-hidden="true"></i> <span class="sr-only">Subtract Stock</span></a>
+												</td>
+												<td>
+													<a href="#" class="btn btn-default btn-xs" data-toggle="tooltip" data-placement="top" title="Remove this item"><i class="glyphicon glyphicon-trash" aria-hidden="true"></i> <span class="sr-only">Remove</span></a>
 												</td>
 											</tr>
 											<tr>
@@ -141,11 +148,14 @@
 												<td>0 pcs</td>
 												<td>30 pcs</td>
 												<td>10</td>
-												<td>01-01-2018</td>
+												<td>Jan. 1, 2018</td>
 												<td>Lorem ipsum dolor sit amet.</td>
 												<td>
-													<a href="#" class="btn btn-default btn-xs" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Update</span></a>
-													<a href="#" class="btn btn-default btn-xs" data-toggle="tooltip" data-placement="top" title="Remove this item"><i class="glyphicon glyphicon-remove" aria-hidden="true"></i> <span class="sr-only">Remove</span></a>
+													<a href="#" class="btn btn-default btn-xs" data-toggle="modal" data-target="#addModal"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i> <span class="sr-only">Add Stock</span></a>
+													<a href="#" class="btn btn-default btn-xs" data-toggle="modal" data-target="#subtractModal"><i class="glyphicon glyphicon-minus" aria-hidden="true"></i> <span class="sr-only">Subtract Stock</span></a>
+												</td>
+												<td>
+													<a href="#" class="btn btn-default btn-xs" data-toggle="tooltip" data-placement="top" title="Remove this item"><i class="glyphicon glyphicon-trash" aria-hidden="true"></i> <span class="sr-only">Remove</span></a>
 												</td>
 											</tr>
 										</tbody>
@@ -168,28 +178,28 @@
 	</div>
 
 	<!-- Modal -->
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					<h4>Hard Hat (Yellow)</h4>
+					<h4>Add Stock: Hard Hat (Yellow)</h4>
 				</div>
 				<div class="modal-body">
 					<div class="row">
-						<div class="col-sm-4">
+						<div class="col-sm-5">
 							<div class="form-group">
-								<label for="">Add Stock</label>
-								<input type="number" class="form-control" placeholder="0">
+								<label for="">Quantity</label>
+								<input type="number" class="form-control" placeholder="0" min="0">
 							</div>
 						</div>
-						<div class="col-sm-4">
+						<div class="col-sm-5">
 							<div class="form-group">
-								<label for="">Substract Stock</label>
-								<input type="number" class="form-control" placeholder="0">
+								<label for="">Reordering Point</label>
+								<input type="number" class="form-control" placeholder="0" min="0">
 							</div>
 						</div>
-						<div class="col-sm-4">
+						<div class="col-sm-2">
 							<div class="form-group">
 								<label for="">Unit</label>
 								<select class="form-control">
@@ -200,19 +210,65 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-sm-4">
-							<div class="form-group">
-								<label for="">Reordering Point</label>
-								<input type="number" class="form-control" placeholder="0">
-							</div>
-						</div>
-						<div class="col-sm-4">
+						<div class="col-sm-5">
 							<div class="form-group">
 								<label for="">Expiration Date</label>
 								<input type="date" class="form-control">
 							</div>
 						</div>
-						<div class="col-md-4">
+						<div class="col-md-7">
+							<label for="">Remarks (optional)</label>
+							<textarea class="form-control"></textarea>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="subtractModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4>Subtract Stock: Hard Hat (Yellow)</h4>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-sm-5">
+							<div class="form-group">
+								<label for="">Quantity</label>
+								<input type="number" class="form-control" placeholder="0" min="0">
+							</div>
+						</div>
+						<div class="col-sm-5">
+							<div class="form-group">
+								<label for="">Reordering Point</label>
+								<input type="number" class="form-control" placeholder="0" min="0">
+							</div>
+						</div>
+						<div class="col-sm-2">
+							<div class="form-group">
+								<label for="">Unit</label>
+								<select class="form-control">
+									<option>pcs</option>
+									<option>pairs</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-5">
+							<div class="form-group">
+								<label for="">Expiration Date</label>
+								<input type="date" class="form-control">
+							</div>
+						</div>
+						<div class="col-md-7">
 							<label for="">Remarks (optional)</label>
 							<textarea class="form-control"></textarea>
 						</div>

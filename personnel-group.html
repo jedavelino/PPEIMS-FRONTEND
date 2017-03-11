@@ -69,20 +69,36 @@
 					<div class="row">
 						<div class="col-md-12">
 							<div class="margin-bottom-20">
-								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add Personnel Group</button>
+								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">New Personnel Group</button>
 							</div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-12">
 							<div class="panel panel-default">
+								<div class="panel-heading">
+									<div class="row">
+										<div class="col-md-4">
+											<div class="form-group pull-left">
+												<label for="search-item" class="sr-only">Search Personnel Group</label>
+												<div class="input-group">
+													<input type="search" id="search-item" class="form-control" placeholder="Search personnel group...">
+													<span class="input-group-btn">
+														<button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i> <span class="sr-only">Search</span></button>
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 								<table class="table table-bordered">
 									<thead>
 										<tr>
 											<th>No.</th>
 											<th>Personnel Group</th>
 											<th>Description</th>
-											<th>Action</th>
+											<th>Edit</th>
+											<th>Delete</th>
 										</tr>
 									</thead>
 									<tbody>
@@ -91,7 +107,9 @@
 											<td>Office of the Plant Manager</td>
 											<td>Lorem ipsum dolor sit amet.</td>
 											<td>
-												<a href="#" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-cog" aria-hidden="true"></i> <span class="sr-only">Edit</span></a>
+												<a href="#" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Edit</span></a>
+											</td>
+											<td>
 												<a href="#" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-trash" aria-hidden="true"></i> <span class="sr-only">Delete</span></a>
 											</td>
 										</tr>
@@ -100,7 +118,9 @@
 											<td>Maintenance</td>
 											<td>Lorem ipsum dolor sit amet.</td>
 											<td>
-												<a href="#" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-cog" aria-hidden="true"></i> <span class="sr-only">Edit</span></a>
+												<a href="#" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Edit</span></a>
+											</td>
+											<td>
 												<a href="#" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-trash" aria-hidden="true"></i> <span class="sr-only">Delete</span></a>
 											</td>
 										</tr>
@@ -109,7 +129,9 @@
 											<td>Agus 6 HEP</td>
 											<td>Lorem ipsum dolor sit amet.</td>
 											<td>
-												<a href="#" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-cog" aria-hidden="true"></i> <span class="sr-only">Edit</span></a>
+												<a href="#" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Edit</span></a>
+											</td>
+											<td>
 												<a href="#" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-trash" aria-hidden="true"></i> <span class="sr-only">Delete</span></a>
 											</td>
 										</tr>
@@ -118,7 +140,9 @@
 											<td>Agus 6 HEP</td>
 											<td>Lorem ipsum dolor sit amet.</td>
 											<td>
-												<a href="#" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-cog" aria-hidden="true"></i> <span class="sr-only">Edit</span></a>
+												<a href="#" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Edit</span></a>
+											</td>
+											<td>
 												<a href="#" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-trash" aria-hidden="true"></i> <span class="sr-only">Delete</span></a>
 											</td>
 										</tr>
@@ -127,7 +151,9 @@
 											<td>Agus 6 HEP</td>
 											<td>Lorem ipsum dolor sit amet.</td>
 											<td>
-												<a href="#" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-cog" aria-hidden="true"></i> <span class="sr-only">Edit</span></a>
+												<a href="#" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Edit</span></a>
+											</td>
+											<td>
 												<a href="#" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-trash" aria-hidden="true"></i> <span class="sr-only">Delete</span></a>
 											</td>
 										</tr>
@@ -158,7 +184,7 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					<h4 class="modal-title" id="myModalLabel">Add Personnel Group Form</h4>
+					<h4 class="modal-title" id="myModalLabel">New Personnel Group Details</h4>
 				</div>
 				<div class="modal-body">
 					<div class="form-group">
