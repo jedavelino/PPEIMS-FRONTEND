@@ -28,7 +28,7 @@
 				<li><a href="equipment.html">Equipment</a></li>
 				<li><a href="inventory.html">Inventory</a></li>
 				<li class="current"><a href="personnel.html">Personnel</a></li>
-				<li><a href="#">Issuance</a></li>
+				<li><a href="issuance.html">Issuance</a></li>
 			</ul>
 		</div>
 	</div>
@@ -63,37 +63,35 @@
 					</div>
 					<div class="row">
 						<div class="col-md-12">
-							<h2>Agus 6/7 HEPC Personnel Group</h2>
+							<div class="page-header">
+								<h2>Agus 6/7 HEPC Personnel Group</h2>
+							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-12">
+						<div class="col-md-8">
 							<div class="margin-bottom-20">
-								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">New Personnel Group</button>
+								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Add Personnel Group</button>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group pull-left">
+								<label for="search-item" class="sr-only">Search Personnel Group</label>
+								<div class="input-group">
+									<input type="search" id="search-item" class="form-control" placeholder="Search personnel group...">
+									<span class="input-group-btn">
+										<button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i> <span class="sr-only">Search</span></button>
+									</span>
+								</div>
 							</div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-12">
 							<div class="panel panel-default">
-								<div class="panel-heading">
-									<div class="row">
-										<div class="col-md-4">
-											<div class="form-group pull-left">
-												<label for="search-item" class="sr-only">Search Personnel Group</label>
-												<div class="input-group">
-													<input type="search" id="search-item" class="form-control" placeholder="Search personnel group...">
-													<span class="input-group-btn">
-														<button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i> <span class="sr-only">Search</span></button>
-													</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
 								<table class="table table-bordered">
 									<thead>
-										<tr>
+										<tr class="active">
 											<th>No.</th>
 											<th>Personnel Group</th>
 											<th>Description</th>
@@ -160,14 +158,18 @@
 									</tbody>
 								</table>
 								<div class="panel-footer">
-									<div class="table-pagination">
-										<ul class="pagination">
-											<li class="active"><a href="#">1</a></li>
-											<li><a href="#">2</a></li>
-											<li><a href="#">3</a></li>
-											<li><a href="#">4</a></li>
-											<li><a href="#">5</a></li>
-										</ul>
+									<div class="row">
+										<div class="col-md-4"></div>
+										<div class="col-md-4">
+											<div class="text-center">
+												<p>Showing 5 of 50</p>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="text-right">
+												<a href="#" role="button" class="btn btn-default"><i class="glyphicon glyphicon-chevron-right" aria-hidden="true"></i> <span class="sr-only">Next</span></a>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>

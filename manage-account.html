@@ -28,7 +28,7 @@
 				<li><a href="equipment.html">Equipment</a></li>
 				<li><a href="inventory.html">Inventory</a></li>
 				<li><a href="personnel.html">Personnel</a></li>
-				<li><a href="#">Issuance</a></li>
+				<li><a href="issuance.html">Issuance</a></li>
 			</ul>
 		</div>
 	</div>
@@ -55,7 +55,15 @@
 				<section class="section">
 					<div class="row">
 						<div class="col-md-12">
-							<div class="margin-bottom-20">
+							<ol class="breadcrumb">
+								<li><a href="index.html">Dashboard</a></li>
+								<li class="active">Account Settings</li>
+							</ol>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="page-header">
 								<h2>Account Settings</h2>
 							</div>
 						</div>
@@ -64,7 +72,7 @@
 						<div class="col-md-8">
 							<div class="row">
 								<div class="col-sm-6 col-sm-offset-3">
-									<h3>User Information</h3>
+									<h4>User Information</h4>
 								</div>
 							</div>
 						</div>
@@ -93,8 +101,16 @@
 								<div class="form-group">
 									<label for="" class="col-sm-3 control-label">Profile Picture:</label>
 									<div class="col-sm-6">
-										<input type="file">
-										<p class="help-block">Upload a profile picture, 1mb max.</p>
+										<div class="row">
+											<div class="col-xs-6">
+												<img src="images/user.png" class="img-thumbnail img-responsive margin-bottom-20" alt="">
+												<a href="#" role="button" class="btn btn-default btn-xs">Remove Picture</a>
+											</div>
+											<div class="col-xs-6">
+												<input type="file">
+												<p class="help-block">Upload a profile picture, 1mb max.</p>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -104,7 +120,7 @@
 						<div class="col-md-8">
 							<div class="row">
 								<div class="col-sm-6 col-sm-offset-3">
-									<h3>Change Password</h3>
+									<h4>Change Username &amp; Password</h4>
 								</div>
 							</div>
 						</div>
@@ -112,6 +128,12 @@
 					<div class="row">
 						<div class="col-md-8">
 							<div class="form-horizontal">
+								<div class="form-group">
+									<label for="" class="col-sm-3 control-label">Username:</label>
+									<div class="col-sm-6">
+										<input type="text" class="form-control" value="gene.manlimos">
+									</div>
+								</div>
 								<div class="form-group">
 									<label for="" class="col-sm-3 control-label">Old Password:</label>
 									<div class="col-sm-6">

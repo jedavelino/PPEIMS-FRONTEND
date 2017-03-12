@@ -28,7 +28,7 @@
 				<li><a href="equipment.html">Equipment</a></li>
 				<li class="current"><a href="inventory.html">Inventory</a></li>
 				<li><a href="personnel.html">Personnel</a></li>
-				<li><a href="#">Issuance</a></li>
+				<li><a href="issuance.html">Issuance</a></li>
 			</ul>
 		</div>
 	</div>
@@ -63,35 +63,23 @@
 					</div>
 					<div class="row">
 						<div class="col-md-12">
-							<h2>Personal Protective Equipment Inventory Transactions <small>as of March 20, 2017</small></h2>
+							<div class="page-header">
+								<h2>Personal Protective Equipment Inventory Transactions <small>as of March 20, 2017</small></h2>
+							</div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-12">
 							<div class="panel panel-default">
-								<div class="panel-heading panel-heading--white clearfix">
-									<div class="row">
-										<div class="col-md-4">
-											<div class="form-group">
-												<label for="search-item" class="sr-only">Search particulars...</label>
-												<div class="input-group">
-													<input type="search" id="search-item" class="form-control" placeholder="Search transactions...">
-													<span class="input-group-btn">
-														<button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i></button>
-													</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
 								<div class="table-responsive">
 									<table class="table table-bordered">
 										<thead>
-											<tr>
+											<tr class="active">
 												<th>No.</th>
 												<th>Transaction No.</th>
 												<th>Transaction Date</th>
 												<th>Prepared By</th>
+												<th>Status</th>
 												<th>View</th>
 											</tr>
 										</thead>
@@ -101,6 +89,7 @@
 												<td>003</td>
 												<td>04-20-2017</td>
 												<td>G. Manlimos</td>
+												<td><span class="label label-default">In-Progress</span></td>
 												<td>
 													<a href="#" class="btn btn-default btn-xs" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-zoom-in"></i> <span class="sr-only">View</span></a>
 												</td>
@@ -110,6 +99,7 @@
 												<td>002</td>
 												<td>04-05-2017</td>
 												<td>G. Manlimos</td>
+												<td><span class="label label-success">Complete</span></td>
 												<td>
 													<a href="#" class="btn btn-default btn-xs" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-zoom-in"></i> <span class="sr-only">View</span></a>
 												</td>
@@ -119,6 +109,7 @@
 												<td>001</td>
 												<td>03-29-2017</td>
 												<td>G. Manlimos</td>
+												<td><span class="label label-success">Complete</span></td>
 												<td>
 													<a href="#" class="btn btn-default btn-xs" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-zoom-in"></i> <span class="sr-only">View</span></a>
 												</td>

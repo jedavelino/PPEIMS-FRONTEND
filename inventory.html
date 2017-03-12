@@ -28,7 +28,7 @@
 				<li><a href="equipment.html">Equipment</a></li>
 				<li class="current"><a href="inventory.html">Inventory</a></li>
 				<li><a href="personnel.html">Personnel</a></li>
-				<li><a href="#">Issuance</a></li>
+				<li><a href="issuance.html">Issuance</a></li>
 			</ul>
 		</div>
 	</div>
@@ -62,95 +62,76 @@
 					</div>
 					<div class="row">
 						<div class="col-md-12">
-							<h2>Personal Protective Equipment Inventory <small>as of March 20, 2017</small></h2>
+							<div class="page-header">
+								<h2>Personal Protective Equipment Inventory</h2>
+							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-12">
+						<div class="col-md-8">
 							<div class="margin-bottom-20">
-								<a href="update-inventory.html" class="btn btn-primary">Update Inventory</a>
-								<a href="inventory-transactions.html" class="btn btn-primary">Inventory Transactions</a>
+								<a href="update-inventory.html" class="btn btn-primary">Create Transaction</a>
 							</div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-12">
 							<div class="panel panel-default">
-								<div class="panel-heading panel-heading--white clearfix">
-									<div class="row">
-										<div class="col-md-4">
-											<div class="form-group">
-												<label for="search-item" class="sr-only">Search particulars...</label>
-												<div class="input-group">
-													<input type="search" id="search-item" class="form-control" placeholder="Search particulars...">
-													<span class="input-group-btn">
-														<button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search" aria-hidden="true"></i> <span class="sr-only">Submit</span></button>
-													</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
 								<div class="table-responsive">
 									<table class="table table-bordered">
 										<thead>
-											<tr>
+											<tr class="active">
 												<th>No.</th>
-												<th>Particulars</th>
-												<th>On Stock</th>
-												<th>Issued</th>
-												<th>Remarks</th>
+												<th>Transaction No.</th>
+												<th>Transaction Date</th>
+												<th>Prepared By</th>
+												<th>Status</th>
+												<th>Update</th>
+												<th>View</th>
 											</tr>
 										</thead>
 										<tbody>
 											<tr>
 												<th scope="row">1</th>
-												<td>Hard Hat (Blue)</td>
-												<td>14 pcs</td>
-												<td>0 pcs</td>
-												<td></td>
+												<td>003</td>
+												<td>04-20-2017</td>
+												<td>G. Manlimos</td>
+												<td><span class="label label-default">In-Progress</span></td>
+												<td>
+													<a href="update-inventory.html" role="button" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Edit</span></a>
+												</td>
+												<td>
+													<a href="#" class="btn btn-default btn-xs" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-zoom-in"></i> <span class="sr-only">View</span></a>
+												</td>
 											</tr>
 											<tr>
 												<th scope="row">2</th>
-												<td>Hard Hat (Yellow)</td>
-												<td>49 pcs</td>
-												<td>0 pcs</td>
-												<td></td>
+												<td>002</td>
+												<td>04-05-2017</td>
+												<td>G. Manlimos</td>
+												<td><span class="label label-success">Complete</span></td>
+												<td>
+													<a href="update-inventory.html" role="button" class="btn btn-default btn-xs disabled"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Edit</span></a>
+												</td>
+												<td>
+													<a href="#" class="btn btn-default btn-xs" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-zoom-in"></i> <span class="sr-only">View</span></a>
+												</td>
 											</tr>
 											<tr>
 												<th scope="row">3</th>
-												<td>Protective Eyewear</td>
-												<td>15 pcs</td>
-												<td>85 pcs</td>
-												<td>Lorem ipsum dolor sit amet, consectetur adipisicing.</td>
-											</tr>
-											<tr>
-												<th scope="row">4</th>
-												<td>Face Shield</td>
-												<td>0 pcs</td>
-												<td>0 pcs</td>
-												<td>Lorem ipsum dolor sit amet, consectetur.</td>
-											</tr>
-											<tr>
-												<th scope="row">5</th>
-												<td>Safety Shoes</td>
-												<td>0 pairs</td>
-												<td>110 pairs</td>
-												<td></td>
+												<td>001</td>
+												<td>03-29-2017</td>
+												<td>G. Manlimos</td>
+												<td><span class="label label-success">Complete</span></td>
+												<td>
+													<a href="update-inventory.html" role="button" class="btn btn-default btn-xs disabled"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Edit</span></a>
+												</td>
+												<td>
+													<a href="#" class="btn btn-default btn-xs" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-zoom-in"></i> <span class="sr-only">View</span></a>
+												</td>
 											</tr>
 										</tbody>
 									</table>
-								</div>
-								<div class="panel-footer">
-									<div class="table-pagination">
-										<ul class="pagination">
-											<li class="active"><a href="#">1</a></li>
-											<li><a href="#">2</a></li>
-											<li><a href="#">3</a></li>
-											<li><a href="#">4</a></li>
-											<li><a href="#">5</a></li>
-										</ul>
-									</div>
 								</div>
 							</div>
 						</div>
@@ -159,6 +140,71 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4>Transaction No. 003</h4>
+				</div>
+				<div class="modal-body">
+					<table class="table table-bordered">
+						<thead>
+							<tr class="active">
+								<th>No.</th>
+								<th>Particulars</th>
+								<th>Added Stock</th>
+								<th>Subtracted Stock</th>
+								<th>Total Stock</th>
+								<th>Reorder Point</th>
+								<th>Expiration Date</th>
+								<th>Remarks</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>Hard Hat (Yellow)</td>
+								<td>30 pcs</td>
+								<td>0 pcs</td>
+								<td>79 pcs</td>
+								<td>10</td>
+								<td>01-01-2018</td>
+								<td></td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>Protective Eyewear</td>
+								<td>20 pcs</td>
+								<td>0 pcs</td>
+								<td>35 pcs</td>
+								<td>10</td>
+								<td>01-01-2018</td>
+								<td>Lorem ipsum dolor sit amet, consectetur adipisicing.</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>Face Shield</td>
+								<td>50 pcs</td>
+								<td>0 pcs</td>
+								<td>50 pcs</td>
+								<td>10</td>
+								<td>01-01-2018</td>
+								<td>Lorem ipsum dolor sit amet, consectetur.</td>
+							</tr>
+						</tbody>
+					</table>
+					<p>Transaction Date: 04-20-2017</p>
+					<p>Prepared By: G. Manlimos</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal"><i class="glyphicon glyphicon-print" aria-hidden="true"></i> Print</button>
+				</div>
+			</div>
+		</div>
 
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

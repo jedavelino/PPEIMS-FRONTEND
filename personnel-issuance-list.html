@@ -26,9 +26,9 @@
 			<ul>
 				<li><a href="index.html">Dashboard</a></li>
 				<li><a href="equipment.html">Equipment</a></li>
-				<li class="current"><a href="inventory.html">Inventory</a></li>
+				<li><a href="inventory.html">Inventory</a></li>
 				<li><a href="personnel.html">Personnel</a></li>
-				<li><a href="#">Issuance</a></li>
+				<li class="current"><a href="issuance.html">Issuance</a></li>
 			</ul>
 		</div>
 	</div>
@@ -54,9 +54,30 @@
 				<section class="section">
 					<div class="row">
 						<div class="col-md-12">
-							<div class="page-heading page">
-								<h2 class="page-heading__title">Issue Personal Protective Equipment</h2>
+							<ol class="breadcrumb">
+								<li><a href="index.html">Dashboard</a></li>
+								<li><a href="issuance.html">Issuance</a></li>
+								<li><a href="create-issuance.html">Add/Select Personnel</a></li>
+								<li class="active">Issue Personal Protective Equipment</li>
+							</ol>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="page-header">
+								<h2>Issue Personal Protective Equipment</h2>
 							</div>
+						</div>
+					</div>
+					<div class="row margin-bottom-20">
+						<div class="col-md-4">
+							<strong>Issuance No: 003</strong>
+						</div>
+						<div class="col-md-4">
+							<strong>Prepared By: G. Manlimos</strong>
+						</div>
+						<div class="col-md-4">
+							<strong>Issuance Date: March 20, 2017</strong>
 						</div>
 					</div>
 					<div class="row">
@@ -64,7 +85,7 @@
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<div class="row">
-										<div class="col-md-3">
+										<!-- <div class="col-md-3">
 											<h5>Issuance No: 003</h5>
 										</div>
 										<div class="col-md-3">
@@ -72,9 +93,9 @@
 										</div>
 										<div class="col-md-3">
 											<h5>Issuance Date: March 20, 2017</h5>
-										</div>
-										<div class="col-md-3">
-											<button type="button" aria-label="Print" data-toggle="tooltip" data-placement="top" title="Print List" class="btn btn-default pull-right"><i class="glyphicon glyphicon-print" aria-hidden="true"></i></button>
+										</div> -->
+										<div class="col-md-12">
+											<button type="button" aria-label="Delete" data-toggle="tooltip" data-placement="top" title="Delete List" class="btn btn-default pull-right"><i class="glyphicon glyphicon-trash" aria-hidden="true"></i> <span class="sr-only">Delete List</span></button>
 										</div>
 									</div>
 								</div>
@@ -83,19 +104,31 @@
 										<thead>
 											<tr>
 												<th>No.</th>
-												<th>Particulars</th>
-												<th>Current Stock</th>
+												<th>Personnel</th>
+												<!-- <th>Add Equipment</th> -->
+												<th>Delete Entry</th>
+												<!-- <th>Current Stock</th>
 												<th>Added Stock</th>
 												<th>Subtracted Stock</th>
 												<th>Total Stock</th>
 												<th>Reorder Point</th>
 												<th>Expiration Date</th>
 												<th>Remarks</th>
-												<th>Action</th>
+												<th>Action</th> -->
 											</tr>
 										</thead>
 										<tbody>
 											<tr>
+												<th scope="row">1</th>
+												<td>Henry Hiceta</td>
+												<!-- <td>
+													<a href="#" class="btn btn-default btn-xs" data-toggle="modal" data-target="#addModal"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i> <span class="sr-only">Add Stock</span></a>
+												</td> -->
+												<td>
+													<a href="#" class="btn btn-default btn-xs" data-toggle="tooltip" data-placement="top" title="Delete this item"><i class="glyphicon glyphicon-trash" aria-hidden="true"></i> <span class="sr-only">Delete</span></a>
+												</td>
+											</tr>
+											<!-- <tr>
 												<th scope="row">1</th>
 												<td>Hard Hat (Yellow)</td>
 												<td>49 pcs</td>
@@ -139,20 +172,37 @@
 													<a href="#" class="btn btn-default btn-xs" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Update</span></a>
 													<a href="#" class="btn btn-default btn-xs" data-toggle="tooltip" data-placement="top" title="Remove this item"><i class="glyphicon glyphicon-remove" aria-hidden="true"></i> <span class="sr-only">Remove</span></a>
 												</td>
-											</tr>
+											</tr> -->
 										</tbody>
 									</table>
 								</div>
-								<div class="panel-footer">
-									<div class="row">
-										<div class="col-md-12">
+								<!-- <div class="panel-footer"> -->
+									<!-- <div class="row">
+										<div class="col-md-6">
 											<a href="#" class="btn btn-primary">Save Changes</a>
 											<a href="update-inventory.html" class="btn btn-default">Cancel</a>
 										</div>
-									</div>
-								</div>
+										<div class="col-md-6">
+											<button type="button" aria-label="Print" data-toggle="tooltip" data-placement="top" title="Print List" class="btn btn-default pull-right"><i class="glyphicon glyphicon-print" aria-hidden="true"></i></button>
+										</div>
+									</div> -->
+								<!-- </div> -->
 							</div>
 						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<a href="#" class="btn btn-primary">Save Changes</a>
+							<a href="issuance.html" class="btn btn-default">Cancel</a>
+						</div>
+						<div class="col-md-6">
+							<div class="text-right">
+								<a href="create-issuance.html" class="btn btn-default">Back</a>
+							</div>
+						</div>
+						<!-- <div class="col-md-6">
+							<button type="button" aria-label="Print" data-toggle="tooltip" data-placement="top" title="Print List" class="btn btn-default pull-right"><i class="glyphicon glyphicon-print" aria-hidden="true"></i> Print</button>
+						</div> -->
 					</div>
 				</section>
 			</div>
@@ -160,7 +210,7 @@
 	</div>
 
 	<!-- Modal -->
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -170,6 +220,54 @@
 				<div class="modal-body">
 					<div class="row">
 						<div class="col-sm-4">
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="">
+									Hard Hat (Yellow)
+								</label>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="">
+									Hard Hat (Yellow)
+								</label>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="">
+									Hard Hat (Yellow)
+								</label>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="">
+									Hard Hat (Yellow)
+								</label>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="">
+									Hard Hat (Yellow)
+								</label>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="">
+									Hard Hat (Yellow)
+								</label>
+							</div>
+						</div>
+						<!-- <div class="col-sm-4">
 							<div class="form-group">
 								<label for="">Add Stock</label>
 								<input type="number" class="form-control" placeholder="0">
@@ -189,25 +287,7 @@
 									<option>pairs</option>
 								</select>
 							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-4">
-							<div class="form-group">
-								<label for="">Reordering Point</label>
-								<input type="number" class="form-control" placeholder="0">
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="form-group">
-								<label for="">Expiration Date</label>
-								<input type="date" class="form-control">
-							</div>
-						</div>
-						<div class="col-md-4">
-							<label for="">Remarks (optional)</label>
-							<textarea class="form-control"></textarea>
-						</div>
+						</div> -->
 					</div>
 				</div>
 				<div class="modal-footer">

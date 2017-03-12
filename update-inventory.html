@@ -28,7 +28,7 @@
 				<li><a href="equipment.html">Equipment</a></li>
 				<li class="current"><a href="inventory.html">Inventory</a></li>
 				<li><a href="personnel.html">Personnel</a></li>
-				<li><a href="#">Issuance</a></li>
+				<li><a href="issuance.html">Issuance</a></li>
 			</ul>
 		</div>
 	</div>
@@ -63,34 +63,38 @@
 					</div>
 					<div class="row">
 						<div class="col-md-12">
-							<h2>Add/Select Personal Protective Equipment to Update</h2>
+							<div class="page-header">
+								<h2>Add/Select Personal Protective Equipment to Update</h2>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-8">
+							<div class="margin-bottom-20">
+								<a href="inventory-equipment-list.html" role="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Equipment List">Equipment List <span class="badge">3</span></a>
+								<!-- Example of 0 equipment added -->
+								<a href="inventory-equipment-list.html" role="button" class="btn btn-primary disabled" data-toggle="tooltip" data-placement="top" title="Equipment List">Equipment List <span class="badge">0</span></a>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="form-group">
+								<label for="search-item" class="sr-only">Search Item</label>
+								<div class="input-group">
+									<input type="search" id="search-item" class="form-control" placeholder="Search particulars...">
+									<span class="input-group-btn">
+										<button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i></button>
+									</span>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-12">
 							<div class="panel panel-default">
-								<div class="panel-heading">
-									<div class="row">
-										<div class="col-md-4">
-											<div class="form-group">
-												<label for="search-item" class="sr-only">Search Item</label>
-												<div class="input-group">
-													<input type="search" id="search-item" class="form-control" placeholder="Search particulars...">
-													<span class="input-group-btn">
-														<button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i></button>
-													</span>
-												</div>
-											</div>
-										</div>
-										<div class="col-md-8">
-											<a href="inventory-equipment-list.html" class="btn btn-primary pull-right" data-toggle="tooltip" data-placement="top" title="View equipment list">Equipment List (3)</a>
-										</div>
-									</div>
-								</div>
 								<div class="table-responsive">
 									<table class="table table-bordered">
 										<thead>
-											<tr>
+											<tr class="active">
 												<th>No.</th>
 												<th>Particulars</th>
 												<th>Description</th>
@@ -148,16 +152,27 @@
 									</table>
 								</div>
 								<div class="panel-footer">
-									<div class="table-pagination">
-										<ul class="pagination">
-											<li class="active"><a href="#">1</a></li>
-											<li><a href="#">2</a></li>
-											<li><a href="#">3</a></li>
-											<li><a href="#">4</a></li>
-											<li><a href="#">5</a></li>
-										</ul>
+									<div class="row">
+										<div class="col-md-4"></div>
+										<div class="col-md-4">
+											<div class="text-center">
+												Showing 5 of 50
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="text-right">
+												<a href="#" class="btn btn-default"><i class="glyphicon glyphicon-chevron-right"></i> <span class="sr-only">Next</span></a>
+											</div>
+										</div>
 									</div>
 								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="text-right">
+								<a href="inventory-equipment-list.html" class="btn btn-default">Next</a>
 							</div>
 						</div>
 					</div>
