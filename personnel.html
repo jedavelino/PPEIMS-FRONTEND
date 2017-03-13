@@ -25,10 +25,10 @@
 		<div class="sidebar-nav">
 			<ul>
 				<li><a href="index.html">Dashboard</a></li>
-				<li><a href="equipment.html">Equipment</a></li>
-				<li><a href="inventory.html">Inventory</a></li>
+				<li><a href="personal-protective-equipment.html">Equipment</a></li>
+				<li><a href="personal-protective-equipment-batch.html">Equipment Batch</a></li>
 				<li class="current"><a href="personnel.html">Personnel</a></li>
-				<li><a href="issuance.html">Issuance</a></li>
+				<li><a href="personal-protective-equipment-issuance.html">Equipment Issuance</a></li>
 			</ul>
 		</div>
 	</div>
@@ -54,36 +54,20 @@
 				<section class="section">
 					<div class="row">
 						<div class="col-md-12">
-							<!-- Alert for success -->
-							<!-- <div class="alert alert-success alert-dismissable" role="alert">
-								<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-								<strong>Success!</strong> Personnel John Noah Ompad has been added.
-							</div> -->
-							<!-- Alert for error -->
-							<!-- <div class="alert alert-danger alert-dismissable" role="alert">
-								<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-								<strong>Error!</strong> Something's wrong. Please try again.
-							</div> -->
 							<ol class="breadcrumb">
 								<li><a href="index.html">Dashboard</a></li>
-								<li class="active">Personnel</li>
+								<li class="active">Plant Personnel</li>
 							</ol>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-12">
 							<div class="page-header">
-								<h2>Agus 6/7 HEPC Personnel</h2>
+								<h2>Plant Personnel</h2>
 							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-8">
-							<div class="margin-bottom-20">
-								<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#newModal">Add Personnel</button>
-								<a href="personnel-group.html" class="btn btn-primary">Personnel Group</a>
-							</div>
-						</div>
 						<div class="col-md-4">
 							<div class="form-group">
 								<label for="search-item" class="sr-only">Search Personnel</label>
@@ -95,96 +79,83 @@
 								</div>
 							</div>
 						</div>
+						<div class="col-md-8">
+							<div class="text-right margin-bottom-20">
+								<a href="#" role="button" class="btn btn-primary" data-toggle="modal" data-target="#newModal">Add Personnel</a>
+								<a href="personnel-group.html" class="btn btn-primary">Personnel Group</a>
+							</div>
+						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-12">
-							<div class="panel panel-default">
-								<table class="table table-bordered">
-									<thead>
-										<tr class="active">
-											<th>No.</th>
-											<th>Personnel</th>
-											<th>Group</th>
-											<th>Edit</th>
-											<th>Delete</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<th scope="row">1</th>
-											<td>Henry Hiceta</td>
-											<td>Office of the Plant Manager</td>
-											<td>
-												<a href="#" data-toggle="modal" data-target="#editModal" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Edit</span></a>
-											</td>
-											<td>
-												<a href="#" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-trash" aria-hidden="true"></i> <span class="sr-only">Delete</span></a>
-											</td>
-										</tr>
-										<tr>
-											<th scope="row">2</th>
-											<td>Romeo Encabo</td>
-											<td>Maintenance</td>
-											<td>
-												<a href="#" data-toggle="modal" data-target="#editModal" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Edit</span></a>
-											</td>
-											<td>
-												<a href="#" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-trash" aria-hidden="true"></i> <span class="sr-only">Delete</span></a>
-											</td>
-										</tr>
-										<tr>
-											<th scope="row">3</th>
-											<td>Wilfredo Alfeche</td>
-											<td>Agus 6 HEP</td>
-											<td>
-												<a href="#" data-toggle="modal" data-target="#editModal" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Edit</span></a>
-											</td>
-											<td>
-												<a href="#" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-trash" aria-hidden="true"></i> <span class="sr-only">Delete</span></a>
-											</td>
-										</tr>
-										<tr>
-											<th scope="row">4</th>
-											<td>Edgar Bas</td>
-											<td>Agus 6 HEP</td>
-											<td>
-												<a href="#" data-toggle="modal" data-target="#editModal" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Edit</span></a>
-											</td>
-											<td>
-												<a href="#" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-trash" aria-hidden="true"></i> <span class="sr-only">Delete</span></a>
-											</td>
-										</tr>
-										<tr>
-											<th scope="row">5</th>
-											<td>Auxiliador Cabusas</td>
-											<td>Agus 6 HEP</td>
-											<td>
-												<a href="#" data-toggle="modal" data-target="#editModal" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Edit</span></a>
-											</td>
-											<td>
-												<a href="#" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-trash" aria-hidden="true"></i> <span class="sr-only">Delete</span></a>
-											</td>
-										</tr>
-									</tbody>
-								</table>
-								<div class="panel-footer">
-									<div class="row">
-										<div class="col-md-4">
-											
-										</div>
-										<div class="col-md-4">
-											<div class="text-center">
-												Showing 5 of 100
-											</div>
-										</div>
-										<div class="col-md-4">
-											<div class="text-right">
-												<a href="#" class="btn btn-default"><i class="glyphicon glyphicon-chevron-right"></i> <span class="sr-only">Next</span></a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
+							<table class="table table-bordered">
+								<thead>
+									<tr class="active">
+										<th>No.</th>
+										<th>Personnel</th>
+										<th>Group</th>
+										<th>Edit</th>
+										<th>Delete</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1</th>
+										<td>Henry Hiceta</td>
+										<td>Office of the Plant Manager</td>
+										<td>
+											<a href="#" data-toggle="modal" data-target="#editModal" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Edit</span></a>
+										</td>
+										<td>
+											<a href="#" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-trash" aria-hidden="true"></i> <span class="sr-only">Delete</span></a>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">2</th>
+										<td>Romeo Encabo</td>
+										<td>Maintenance</td>
+										<td>
+											<a href="#" data-toggle="modal" data-target="#editModal" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Edit</span></a>
+										</td>
+										<td>
+											<a href="#" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-trash" aria-hidden="true"></i> <span class="sr-only">Delete</span></a>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">3</th>
+										<td>Wilfredo Alfeche</td>
+										<td>Agus 6 HEP</td>
+										<td>
+											<a href="#" data-toggle="modal" data-target="#editModal" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Edit</span></a>
+										</td>
+										<td>
+											<a href="#" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-trash" aria-hidden="true"></i> <span class="sr-only">Delete</span></a>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">4</th>
+										<td>Edgar Bas</td>
+										<td>Agus 6 HEP</td>
+										<td>
+											<a href="#" data-toggle="modal" data-target="#editModal" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Edit</span></a>
+										</td>
+										<td>
+											<a href="#" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-trash" aria-hidden="true"></i> <span class="sr-only">Delete</span></a>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">5</th>
+										<td>Auxiliador Cabusas</td>
+										<td>Agus 6 HEP</td>
+										<td>
+											<a href="#" data-toggle="modal" data-target="#editModal" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Edit</span></a>
+										</td>
+										<td>
+											<a href="#" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-trash" aria-hidden="true"></i> <span class="sr-only">Delete</span></a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
 					</div>
 				</section>

@@ -25,10 +25,10 @@
 		<div class="sidebar-nav">
 			<ul>
 				<li><a href="index.html">Dashboard</a></li>
-				<li><a href="equipment.html">Equipment</a></li>
-				<li class="current"><a href="inventory.html">Inventory</a></li>
+				<li><a href="personal-protective-equipment.html">Equipment</a></li>
+				<li class="current"><a href="personal-protective-equipment-batch.html">Equipment Batch</a></li>
 				<li><a href="personnel.html">Personnel</a></li>
-				<li><a href="issuance.html">Issuance</a></li>
+				<li><a href="personal-protective-equipment-issuance.html">Equipment Issuance</a></li>
 			</ul>
 		</div>
 	</div>
@@ -56,67 +56,81 @@
 						<div class="col-md-12">
 							<ol class="breadcrumb">
 								<li><a href="index.html">Dashboard</a></li>
-								<li><a href="inventory.html">Inventory</a></li>
-								<li class="active">Inventory Transactions</li>
+								<li class="active">Personal Protective Equipment Batch</li>
 							</ol>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-12">
 							<div class="page-header">
-								<h2>Personal Protective Equipment Inventory Transactions <small>as of March 20, 2017</small></h2>
+								<h2>Personal Protective Equipment Batch</h2>
 							</div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-12">
-							<div class="panel panel-default">
-								<div class="table-responsive">
-									<table class="table table-bordered">
-										<thead>
-											<tr class="active">
-												<th>No.</th>
-												<th>Transaction No.</th>
-												<th>Transaction Date</th>
-												<th>Prepared By</th>
-												<th>Status</th>
-												<th>View</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<th scope="row">1</th>
-												<td>003</td>
-												<td>04-20-2017</td>
-												<td>G. Manlimos</td>
-												<td><span class="label label-default">In-Progress</span></td>
-												<td>
-													<a href="#" class="btn btn-default btn-xs" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-zoom-in"></i> <span class="sr-only">View</span></a>
-												</td>
-											</tr>
-											<tr>
-												<th scope="row">2</th>
-												<td>002</td>
-												<td>04-05-2017</td>
-												<td>G. Manlimos</td>
-												<td><span class="label label-success">Complete</span></td>
-												<td>
-													<a href="#" class="btn btn-default btn-xs" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-zoom-in"></i> <span class="sr-only">View</span></a>
-												</td>
-											</tr>
-											<tr>
-												<th scope="row">3</th>
-												<td>001</td>
-												<td>03-29-2017</td>
-												<td>G. Manlimos</td>
-												<td><span class="label label-success">Complete</span></td>
-												<td>
-													<a href="#" class="btn btn-default btn-xs" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-zoom-in"></i> <span class="sr-only">View</span></a>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
+							<div class="margin-bottom-20">
+								<a href="select-personal-protective-equipment.html" class="btn btn-primary">Create Batch</a>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="table-responsive">
+								<table class="table table-bordered">
+									<thead>
+										<tr class="active">
+											<th>No.</th>
+											<th>Batch No.</th>
+											<th>Date Completed</th>
+											<th>Prepared By</th>
+											<th>Status</th>
+											<th>Update</th>
+											<th>View</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">1</th>
+											<td>003</td>
+											<td></td>
+											<td>G. Manlimos</td>
+											<td><span class="label label-default">Pending</span></td>
+											<td>
+												<a href="select-personal-protective-equipment.html" role="button" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Edit</span></a>
+											</td>
+											<td>
+												<a href="#" class="btn btn-default btn-xs disabled" role="button" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-zoom-in"></i> <span class="sr-only">View</span></a>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">2</th>
+											<td>002</td>
+											<td>04-05-2017</td>
+											<td>G. Manlimos</td>
+											<td><span class="label label-success">Completed</span></td>
+											<td>
+												<a href="update-inventory.html" role="button" class="btn btn-default btn-xs disabled"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Edit</span></a>
+											</td>
+											<td>
+												<a href="#" class="btn btn-default btn-xs" role="button" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-zoom-in"></i> <span class="sr-only">View</span></a>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">3</th>
+											<td>001</td>
+											<td>03-29-2017</td>
+											<td>G. Manlimos</td>
+											<td><span class="label label-success">Completed</span></td>
+											<td>
+												<a href="update-inventory.html" role="button" class="btn btn-default btn-xs disabled"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Edit</span></a>
+											</td>
+											<td>
+												<a href="#" class="btn btn-default btn-xs" role="button" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-zoom-in"></i> <span class="sr-only">View</span></a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
 							</div>
 						</div>
 					</div>
@@ -131,12 +145,12 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					<h4>Transaction No. 003</h4>
+					<h4>Batch No. 003</h4>
 				</div>
 				<div class="modal-body">
 					<table class="table table-bordered">
 						<thead>
-							<tr>
+							<tr class="active">
 								<th>No.</th>
 								<th>Particulars</th>
 								<th>Added Stock</th>
@@ -180,7 +194,7 @@
 							</tr>
 						</tbody>
 					</table>
-					<p>Transaction Date: 04-20-2017</p>
+					<p>Date: 04-20-2017</p>
 					<p>Prepared By: G. Manlimos</p>
 				</div>
 				<div class="modal-footer">
@@ -189,7 +203,6 @@
 				</div>
 			</div>
 		</div>
-	</div>
 
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>

@@ -26,12 +26,10 @@
 		<div class="sidebar-nav">
 			<ul>
 				<li><a href="index.html">Dashboard</a></li>
-				<li><a href="equipment.html">Equipment</a></li>
-				<li><a href="inventory.html">Inventory</a></li>
-				<li>
-					<a href="personnel.html">Personnel</a>
-				</li>
-				<li class="current"><a href="issuance.html">Issuance</a></li>
+				<li><a href="personal-protective-equipment.html">Equipment</a></li>
+				<li><a href="personal-protective-equipment-batch.html">Equipment Batch</a></li>
+				<li><a href="personnel.html">Personnel</a></li>
+				<li class="current"><a href="issuance.html">Equipment Issuance</a></li>
 			</ul>
 		</div>
 	</div>
@@ -59,24 +57,19 @@
 						<div class="col-md-12">
 							<ol class="breadcrumb">
 								<li><a href="index.html">Dashboard</a></li>
-								<li><a href="issuance.html">Issuance</a></li>
-								<li class="active">Add/Select Personnel</li>
+								<li><a href="personal-protective-equipment-issuance.html">Personal Protective Equipment Issuance</a></li>
+								<li class="active">Select Plant Personnel</li>
 							</ol>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-12">
 							<div class="page-header">
-								<h2>Add/Select Personnel for Personal Protective Equipment Issuance</h2>
+								<h2>Select Plant Personnel</h2>
 							</div>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-8">
-							<div class="margin-bottom-20">
-								<a href="personnel-issuance-list.html" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="View equipment list">Personnel List <span class="badge">3</span></a>
-							</div>
-						</div>
 						<div class="col-md-4">
 							<div class="form-group pull-left">
 								<label for="search-item" class="sr-only">Search Personnel</label>
@@ -88,85 +81,71 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-							<div class="panel panel-default">
-								<table class="table table-bordered">
-									<thead>
-										<tr class="active">
-											<th>No.</th>
-											<th>Personnel</th>
-											<th>Group</th>
-											<th>Action</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<th scope="row">1</th>
-											<td>Henry Hiceta</td>
-											<td>Office of the Plant Manager</td>
-											<td>
-												<span class="label label-success">Added</span>
-											</td>
-										</tr>
-										<tr>
-											<th scope="row">2</th>
-											<td>Romeo Encabo</td>
-											<td>Maintenance</td>
-											<td>
-												<span class="label label-success">Added</span>
-											</td>
-										</tr>
-										<tr>
-											<th scope="row">3</th>
-											<td>Wilfredo Alfeche</td>
-											<td>Agus 6 HEP</td>
-											<td>
-												<span class="label label-success">Added</span>
-											</td>
-										</tr>
-										<tr>
-											<th scope="row">4</th>
-											<td>Edgar Bas</td>
-											<td>Agus 6 HEP</td>
-											<td>
-												<a href="#" class="btn btn-default btn-xs" data-toggle="tooltip" data-placement="top" title="Add to List"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i> <span class="sr-only">Add</span></a>
-											</td>
-										</tr>
-										<tr>
-											<th scope="row">5</th>
-											<td>Auxiliador Cabusas</td>
-											<td>Agus 6 HEP</td>
-											<td>
-												<a href="#" class="btn btn-default btn-xs" data-toggle="tooltip" data-placement="top" title="Add to List"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i> <span class="sr-only">Add</span></a>
-											</td>
-										</tr>
-									</tbody>
-								</table>
-								<div class="panel-footer">
-									<div class="row">
-										<div class="col-md-4"></div>
-										<div class="col-md-4">
-											<div class="text-center">
-												<p>Showing 5 of 50</p>
-											</div>
-										</div>
-										<div class="col-md-4">
-											<div class="text-right">
-												<a href="#" class="btn btn-default"><i class="glyphicon glyphicon-chevron-right" aria-hidden="true"></i> <span class="sr-only">Next</span></a>
-											</div>
-										</div>
-									</div>
-								</div>
+						<div class="col-md-8">
+							<div class="text-right margin-bottom-20">
+								<a href="add-personal-protective-equipment-issuance.html" class="btn btn-primary">Issuance Draft <span class="badge">3</span></a>
 							</div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-12">
-							<div class="text-right">
-								<a href="personnel-issuance-list.html" class="btn btn-default">Next</a>
-							</div>
+							<table class="table table-bordered">
+								<thead>
+									<tr class="active">
+										<th>No.</th>
+										<th>Personnel</th>
+										<th>Group</th>
+										<th>Add</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1</th>
+										<td>Henry Hiceta</td>
+										<td>Office of the Plant Manager</td>
+										<td>
+											<span class="label label-success">Added</span>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">2</th>
+										<td>Romeo Encabo</td>
+										<td>Maintenance</td>
+										<td>
+											<span class="label label-success">Added</span>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">3</th>
+										<td>Wilfredo Alfeche</td>
+										<td>Agus 6 HEP</td>
+										<td>
+											<span class="label label-success">Added</span>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">4</th>
+										<td>Edgar Bas</td>
+										<td>Agus 6 HEP</td>
+										<td>
+											<a href="#" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i> <span class="sr-only">Add</span></a>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row">5</th>
+										<td>Auxiliador Cabusas</td>
+										<td>Agus 6 HEP</td>
+										<td>
+											<a href="#" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i> <span class="sr-only">Add</span></a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<a href="personal-protective-equipment-issuance.html" class="btn btn-default">Back</a>
 						</div>
 					</div>
 				</section>

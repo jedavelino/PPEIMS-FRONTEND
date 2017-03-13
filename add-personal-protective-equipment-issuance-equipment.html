@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-dashboard">
+
+	<div class="sidebar">
+		<div class="sidebar-logo">
+			<!-- <a href="#"><img src="images/db-logo.png" alt=""></a> -->
+		</div>
+		<div class="sidebar-user">
+			<div class="sidebar-user-pic"></div>
+			<div class="sidebar-user-name">
+				<span>Gene Manlimos</span>
+				<span>Safety Officer</span>
+			</div>
+		</div>
+		<div class="sidebar-nav">
+			<ul>
+				<li><a href="index.html">Dashboard</a></li>
+				<li><a href="personal-protective-equipment.html">Equipment</a></li>
+				<li><a href="personal-protective-equipment-batch.html">Equipment Batch</a></li>
+				<li><a href="personnel.html">Personnel</a></li>
+				<li class="current"><a href="issuance.html">Equipment Issuance</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="main">
+		<nav class="navbar navbar-top">
+			 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			 	<ul class="nav navbar-nav navbar-right">
+			 		<li class="dropdown">
+			 			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manlimos <span class="caret"></span></a>
+			 			<ul class="dropdown-menu">
+			 				<li><a href="manage-account.html">Account</a></li>
+			 				<li><a href="#">Log Out</a></li>
+			 			</ul>
+			 		</li>
+			 	</ul>
+			 </div>
+		</nav>
+
+		<div class="content">
+			<div class="container-fluid">
+
+				<section class="section">
+					<div class="row">
+						<div class="col-md-12">
+							<ol class="breadcrumb">
+								<li><a href="index.html">Dashboard</a></li>
+								<li><a href="personal-protective-equipment-issuance.html">Personal Protective Equipment Issuance</a></li>
+								<li><a href="select-plant-personnel.html">Select Plant Personnel</a></li>
+								<li><a href="add-personal-protective-equipment-issuance.html">Add Personal Protective Equipment Issuance</a></li>
+								<li class="active">Henry Hiceta's Equipment</li>
+							</ol>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="page-header">
+								<h2>Henry Hiceta's Equipment</h2>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="margin-bottom-20">
+								<a href="#" role="button" class="btn btn-primary" data-toggle="modal" data-target="#addModal">Add Equipment</a>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="table-responsive">
+								<table class="table table-bordered">
+									<thead>
+										<tr class="active">
+											<th>No.</th>
+											<th>Particulars</th>
+											<th>Quantity</th>
+											<th>Edit</th>
+											<th>Delete</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th scope="row">1</th>
+											<td>Hard Hat (Yellow)</td>
+											<td>2</td>
+											<td>
+												<a href="#" role="button" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Edit</span></a>
+											</td>
+											<td>
+												<a href="#" role="button" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-trash" aria-hidden="true"></i> <span class="sr-only">Deleote</span></a>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">2</th>
+											<td>Hard Hat (Blue)</td>
+											<td>1</td>
+											<td>
+												<a href="#" role="button" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Edit</span></a>
+											</td>
+											<td>
+												<a href="#" role="button" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-trash" aria-hidden="true"></i> <span class="sr-only">Deleote</span></a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<a href="add-personal-protective-equipment-issuance.html" class="btn btn-default">Back</a>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal -->
+		<div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog modal-sm" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">Add Personal Protective Equipment</h4>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							<label for="equipment">Equipment</label>
+							<select class="form-control" id="equipment">
+								<option disabled selected>Select equipment</option>
+								<option>Hard Hat (Yellow) (3)</option>
+								<option>Hard Hat (Blue) (10)</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="quantity">Quantity</label>
+							<input type="number" id="quantity" class="form-control" min="0" placeholder="0">
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
