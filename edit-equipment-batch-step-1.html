@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-dashboard">
+
+	<div class="sidebar">
+		<div class="sidebar-logo">
+			<!-- <a href="#"><img src="images/db-logo.png" alt=""></a> -->
+		</div>
+		<div class="sidebar-user">
+			<div class="sidebar-user-pic"></div>
+			<div class="sidebar-user-name">
+				<span>Gene Manlimos</span>
+				<span>Safety Officer</span>
+			</div>
+		</div>
+		<div class="sidebar-nav">
+			<ul>
+				<li><a href="index.html">Dashboard</a></li>
+				<li><a href="equipment.html">Equipment</a></li>
+				<li class="current"><a href="equipment-batch.html">Equipment Batch</a></li>
+				<!-- <li><a href="personnel.html">Personnel</a></li> -->
+				<!-- <li><a href="personal-protective-equipment-issuance.html">Equipment Issuance</a></li> -->
+			</ul>
+		</div>
+	</div>
+
+	<div class="main">
+		<nav class="navbar navbar-top">
+			 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			 	<ul class="nav navbar-nav navbar-right">
+			 		<li class="dropdown">
+			 			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manlimos <span class="caret"></span></a>
+			 			<ul class="dropdown-menu">
+			 				<li><a href="account.html">Account</a></li>
+			 				<li><a href="#">Log Out</a></li>
+			 			</ul>
+			 		</li>
+			 	</ul>
+			 </div>
+		</nav>
+
+		<div class="content">
+			<div class="container-fluid">
+
+				<section class="section">
+					<div class="row">
+						<div class="col-md-12">
+							<ol class="breadcrumb">
+								<li><a href="index.html">Dashboard</a></li>
+								<li><a href="equipment-batch.html">Equipment Batch</a></li>
+								<li><a href="equipment-batch-drafts.html">Equipment Batch Drafts</a></li>
+								<li class="active">Edit Equipment Batch Step 1</li>
+							</ol>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="row-header">
+								<h3>Edit Equipment Batch Step 1</h3>
+								<p>Select the equipment you want to edit in this batch.</p>
+							</div>
+						</div>
+					</div>
+					<div class="row margin-bottom-20">
+						<div class="col-md-3">
+							<strong>Batch:</strong> 003
+						</div>
+						<div class="col-md-3">
+							<strong>Date Added:</strong> March 20, 2017
+						</div>
+						<div class="col-md-3">
+							<strong>Prepared by:</strong> G. Manlimos
+						</div>
+						<div class="col-md-3">
+							<strong>Total Items:</strong> 3
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<div class="row">
+										<div class="col-md-4">
+											<label for="search-item" class="sr-only">Search Item</label>
+											<div class="input-group">
+												<input type="search" id="search-item" class="form-control" placeholder="Search particulars...">
+												<span class="input-group-btn">
+													<button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i></button>
+												</span>
+											</div>
+										</div>
+										<div class="col-md-8">
+											<div class="text-right">
+												<a href="edit-equipment-batch-step-2.html" class="btn btn-primary">Proceed to Step 2 <i class="glyphicon glyphicon-chevron-right" aria-hidden="true"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="table-responsive">
+									<table class="table table-bordered">
+										<thead>
+											<tr>
+												<th class="col-md-1">No.</th>
+												<th class="col-md-3">Particulars</th>
+												<th class="col-md-4">Description</th>
+												<th class="col-md-2">On Stock</th>
+												<th class="col-md-1">Status</th>
+												<th class="col-md-1">Add/Remove</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th class="col-md-1" scope="row">1</th>
+												<td class="col-md-3">Hard Hat (Blue)</td>
+												<td class="col-md-4">Lorem ipsum dolor sit amet.</td>
+												<td class="col-md-2">14 pcs</td>
+												<td class="col-md-1"></td>
+												<td class="col-md-1">
+													<a href="#" role="button" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-plus"></i></a>
+												</td>
+											</tr>
+											<tr>
+												<th class="col-md-1" scope="row">2</th>
+												<td class="col-md-3">Hard Hat (Yellow)</td>
+												<td class="col-md-4">Lorem ipsum dolor sit amet.</td>
+												<td class="col-md-2">49 pcs</td>
+												<td class="col-md-1"><span class="label label-success">Added</span></td>
+												<td class="col-md-1">
+													<a href="#" role="button" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-remove"></i></a>
+												</td>
+											</tr>
+											<tr>
+												<th class="col-md-1" scope="row">3</th>
+												<td class="col-md-3">Protective Eyewear</td>
+												<td class="col-md-4">Lorem ipsum dolor sit amet.</td>
+												<td class="col-md-2">15 pcs</td>
+												<td class="col-md-1"><span class="label label-success">Added</span></td>
+												<td class="col-md-1">
+													<a href="#" role="button" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-remove"></i></a>
+												</td>
+											</tr>
+											<tr>
+												<th class="col-md-1" scope="row">4</th>
+												<td class="col-md-3">Face Shield</td>
+												<td class="col-md-4">Lorem ipsum dolor sit amet.</td>
+												<td class="col-md-1">0 pcs</td>
+												<td class="col-md-1"><span class="label label-success">Added</span></td>
+												<td class="col-md-1">
+													<a href="#" role="button" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-remove"></i></a>
+												</td>
+											</tr>
+											<tr>
+												<th class="col-md-1" scope="row">5</th>
+												<td class="col-md-3">Safety Shoes</td>
+												<td class="col-md-4">Lorem ipsum dolor sit amet.</td>
+												<td class="col-md-2">0 pairs</td>
+												<td class="col-md-1"></td>
+												<td class="col-md-1">
+													<a href="#" role="button" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i></a>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="panel-footer">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="text-right">
+												<a href="#" role="button" class="btn btn-success">Save Changes</a>
+												<a href="#" role="button" data-toggle="modal" data-target="#deleteModal" class="btn btn-danger">Delete</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<a href="equipment-batch-drafts.html" class="btn btn-default">Back</a>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

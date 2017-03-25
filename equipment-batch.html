@@ -25,10 +25,10 @@
 		<div class="sidebar-nav">
 			<ul>
 				<li><a href="index.html">Dashboard</a></li>
-				<li><a href="personal-protective-equipment.html">Equipment</a></li>
-				<li class="current"><a href="personal-protective-equipment-batch.html">Equipment Batch</a></li>
-				<li><a href="personnel.html">Personnel</a></li>
-				<li><a href="personal-protective-equipment-issuance.html">Equipment Issuance</a></li>
+				<li><a href="equipment.html">Equipment</a></li>
+				<li class="current"><a href="equipment-batch.html">Equipment Batch</a></li>
+				<!-- <li><a href="personnel.html">Personnel</a></li> -->
+				<!-- <li><a href="personal-protective-equipment-issuance.html">Equipment Issuance</a></li> -->
 			</ul>
 		</div>
 	</div>
@@ -40,7 +40,7 @@
 			 		<li class="dropdown">
 			 			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manlimos <span class="caret"></span></a>
 			 			<ul class="dropdown-menu">
-			 				<li><a href="manage-account.html">Account</a></li>
+			 				<li><a href="account.html">Account</a></li>
 			 				<li><a href="#">Log Out</a></li>
 			 			</ul>
 			 		</li>
@@ -56,81 +56,81 @@
 						<div class="col-md-12">
 							<ol class="breadcrumb">
 								<li><a href="index.html">Dashboard</a></li>
-								<li class="active">Personal Protective Equipment Batch</li>
+								<li class="active">Equipment Batch</li>
 							</ol>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-12">
-							<div class="page-header">
-								<h2>Personal Protective Equipment Batch</h2>
+							<div class="row-header">
+								<h3>Equipment Batch</h3>
 							</div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-12">
 							<div class="margin-bottom-20">
-								<a href="select-personal-protective-equipment.html" class="btn btn-primary">Create Batch</a>
+								<a href="add-equipment-batch-step-1.html" class="btn btn-primary">Add Equipment Batch</a>
+								<a href="equipment-batch-drafts.html" class="btn btn-primary">View Equipment Batch Drafts <span class="badge">1</span></a>
 							</div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-12">
-							<div class="table-responsive">
-								<table class="table table-bordered">
-									<thead>
-										<tr class="active">
-											<th>No.</th>
-											<th>Batch No.</th>
-											<th>Date Completed</th>
-											<th>Prepared By</th>
-											<th>Status</th>
-											<th>Update</th>
-											<th>View</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<th scope="row">1</th>
-											<td>003</td>
-											<td></td>
-											<td>G. Manlimos</td>
-											<td><span class="label label-default">Pending</span></td>
-											<td>
-												<a href="select-personal-protective-equipment.html" role="button" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Edit</span></a>
-											</td>
-											<td>
-												<a href="#" class="btn btn-default btn-xs disabled" role="button" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-zoom-in"></i> <span class="sr-only">View</span></a>
-											</td>
-										</tr>
-										<tr>
-											<th scope="row">2</th>
-											<td>002</td>
-											<td>04-05-2017</td>
-											<td>G. Manlimos</td>
-											<td><span class="label label-success">Completed</span></td>
-											<td>
-												<a href="update-inventory.html" role="button" class="btn btn-default btn-xs disabled"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Edit</span></a>
-											</td>
-											<td>
-												<a href="#" class="btn btn-default btn-xs" role="button" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-zoom-in"></i> <span class="sr-only">View</span></a>
-											</td>
-										</tr>
-										<tr>
-											<th scope="row">3</th>
-											<td>001</td>
-											<td>03-29-2017</td>
-											<td>G. Manlimos</td>
-											<td><span class="label label-success">Completed</span></td>
-											<td>
-												<a href="update-inventory.html" role="button" class="btn btn-default btn-xs disabled"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Edit</span></a>
-											</td>
-											<td>
-												<a href="#" class="btn btn-default btn-xs" role="button" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-zoom-in"></i> <span class="sr-only">View</span></a>
-											</td>
-										</tr>
-									</tbody>
-								</table>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<div class="row">
+										<div class="col-md-4">
+											<label for="search-batch" class="sr-only">Search Batch</label>
+											<div class="input-group">
+												<input type="search" id="search-batch" class="form-control" placeholder="Search batch...">
+												<span class="input-group-btn">
+													<button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i> <span class="sr-only">Search</span></button>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="table-responsive">
+									<table class="table table-bordered">
+										<thead>
+											<tr>
+												<th class="col-md-1">No.</th>
+												<th class="col-md-2">Batch No.</th>
+												<th>Date Completed</th>
+												<th>Prepared By</th>
+												<th class="col-md-1">Adjust</th>
+												<th class="col-md-1">View</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th class="col-md-1" scope="row">1</th>
+												<td class="col-md-2">002</td>
+												<td>02-10-2017</td>
+												<td>G. Manlimos</td>
+												<td class="col-md-1">
+													<a href="adjust-equipment-batch-step-1.html" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-cog" aria-hidden="true"></i> <span class="sr-only">Adjust</span></a>
+												</td>
+												<td class="col-md-1">
+													<a href="#" class="btn btn-default btn-xs" role="button" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-zoom-in"></i> <span class="sr-only">View</span></a>
+												</td>
+											</tr>
+											<tr>
+												<th class="col-md-1" scope="row">2</th>
+												<td class="col-md-2">001</td>
+												<td>12-25-2016</td>
+												<td>G. Manlimos</td>
+												<td class="col-md-1">
+													<a href="adjust-equipment-batch-step-1.html" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-cog" aria-hidden="true"></i> <span class="sr-only">Adjust</span></a>
+												</td>
+												<td class="col-md-1">
+													<a href="#" class="btn btn-default btn-xs" role="button" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-zoom-in"></i> <span class="sr-only">View</span></a>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
 							</div>
 						</div>
 					</div>

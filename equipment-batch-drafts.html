@@ -24,9 +24,9 @@
 		</div>
 		<div class="sidebar-nav">
 			<ul>
-				<li class="current"><a href="index.html">Dashboard</a></li>
+				<li><a href="index.html">Dashboard</a></li>
 				<li><a href="equipment.html">Equipment</a></li>
-				<li><a href="equipment-batch.html">Equipment Batch</a></li>
+				<li class="current"><a href="equipment-batch.html">Equipment Batch</a></li>
 				<!-- <li><a href="personnel.html">Personnel</a></li> -->
 				<!-- <li><a href="personal-protective-equipment-issuance.html">Equipment Issuance</a></li> -->
 			</ul>
@@ -48,16 +48,22 @@
 			 </div>
 		</nav>
 
-
-
 		<div class="content">
 			<div class="container-fluid">
 
 				<section class="section">
 					<div class="row">
 						<div class="col-md-12">
-							<div class="page-header">
-								<h2>Personal Protective Equipment Inventory <small>as of March 20, 2017</small></h2>
+							<ol class="breadcrumb">
+								<li><a href="index.html">Dashboard</a></li>
+								<li class="active">Equipment Batch Drafts</li>
+							</ol>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="row-header">
+								<h3>Equipment Batch Drafts</h3>
 							</div>
 						</div>
 					</div>
@@ -67,11 +73,11 @@
 								<div class="panel-heading">
 									<div class="row">
 										<div class="col-md-4">
-											<label for="search-item" class="sr-only">Search particulars...</label>
+											<label for="search-batch" class="sr-only">Search Batch</label>
 											<div class="input-group">
-												<input type="search" id="search-item" class="form-control" placeholder="Search particulars...">
+												<input type="search" id="search-batch" class="form-control" placeholder="Search batch...">
 												<span class="input-group-btn">
-													<button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search" aria-hidden="true"></i> <span class="sr-only">Submit</span></button>
+													<button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i> <span class="sr-only">Search</span></button>
 												</span>
 											</div>
 										</div>
@@ -81,48 +87,26 @@
 									<table class="table table-bordered">
 										<thead>
 											<tr>
-												<th>No.</th>
-												<th>Particulars</th>
-												<th>On Stock</th>
-												<th>Issued</th>
-												<th>Remarks</th>
+												<th class="col-md-1">No.</th>
+												<th class="col-md-2">Batch No.</th>
+												<th>Date Added</th>
+												<th>Prepared By</th>
+												<th class="col-md-1">Edit</th>
+												<th class="col-md-1">Delete</th>
 											</tr>
 										</thead>
 										<tbody>
 											<tr>
-												<th scope="row">1</th>
-												<td>Hard Hat (Blue)</td>
-												<td>14 pcs</td>
-												<td>0 pcs</td>
-												<td></td>
-											</tr>
-											<tr>
-												<th scope="row">2</th>
-												<td>Hard Hat (Yellow)</td>
-												<td>49 pcs</td>
-												<td>0 pcs</td>
-												<td></td>
-											</tr>
-											<tr>
-												<th scope="row">3</th>
-												<td>Protective Eyewear</td>
-												<td>15 pcs</td>
-												<td>85 pcs</td>
-												<td>Lorem ipsum dolor sit amet, consectetur adipisicing.</td>
-											</tr>
-											<tr>
-												<th scope="row">4</th>
-												<td>Face Shield</td>
-												<td>0 pcs</td>
-												<td>0 pcs</td>
-												<td>Lorem ipsum dolor sit amet, consectetur.</td>
-											</tr>
-											<tr>
-												<th scope="row">5</th>
-												<td>Safety Shoes</td>
-												<td>0 pairs</td>
-												<td>110 pairs</td>
-												<td></td>
+												<th class="col-md-1" scope="row">1</th>
+												<td class="col-md-2">003</td>
+												<td>03-20-2017</td>
+												<td>G. Manlimos</td>
+												<td class="col-md-1">
+													<a href="edit-equipment-batch-step-1.html" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Edit Draft</span></a>
+												</td>
+												<td class="col-md-1">
+													<a href="select-personal-protective-equipment.html" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-trash" aria-hidden="true"></i> <span class="sr-only">Delete Draft</span></a>
+												</td>
 											</tr>
 										</tbody>
 									</table>
@@ -131,37 +115,11 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-6">
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4>Overview of Low Supply Personal Protective Equipment</h4>
-								</div>
-								<table class="table table-bordered">
-									<thead>
-										<tr>
-											<th>No.</th>
-											<th>Particulars</th>
-											<th>On Stock</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<th scope="row">1</th>
-											<td>Face Shield</td>
-											<td>0 pcs</td>
-										</tr>
-										<tr>
-											<th scope="row">2</th>
-											<td>Safety Shoes</td>
-											<td>0 pcs</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
+						<div class="col-md-12">
+							<a href="equipment-batch.html" class="btn btn-default">Back</a>
 						</div>
-					</div>	
+					</div>
 				</section>
-
 			</div>
 		</div>
 	</div>
