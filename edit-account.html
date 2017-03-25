@@ -57,7 +57,8 @@
 						<div class="col-md-12">
 							<ol class="breadcrumb">
 								<li><a href="index.html">Dashboard</a></li>
-								<li class="active">Account Settings</li>
+								<li><a href="account.html">Account Settings</a></li>
+								<li class="active">Edit User Profile</li>
 							</ol>
 						</div>
 					</div>
@@ -73,13 +74,8 @@
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<div class="row">
-										<div class="col-sm-6">
-											<h4>User Profile</h4>
-										</div>
-										<div class="col-sm-6">
-											<div class="text-right">
-												<a href="edit-account.html" class="btn btn-success">Edit Profile</a>
-											</div>
+										<div class="col-sm-12">
+											<h4>Edit User Profile</h4>
 										</div>
 									</div>
 								</div>
@@ -87,19 +83,28 @@
 									<div class="row">
 										<div class="col-sm-3">
 											<img src="images/user.png" class="img-thumbnail img-responsive" alt="">
+											<button role="button" class="btn btn-danger btn-xs margin-bottom-20">Remove Picture</button>
 										</div>
 										<div class="col-sm-9">
+											<div class="row">
+												<div class="col-sm-12">
+													<div class="form-group">
+														<input type="file">
+														<p class="help-block">Upload a profile picture, 1mb max.</p>
+													</div>
+												</div>
+											</div>
 											<div class="row">
 												<div class="col-sm-6">
 													<div class="form-group">
 														<label for="fname">First Name</label>
-														<input type="text" id="fname" class="form-control" value="Gene" readonly>
+														<input type="text" id="fname" class="form-control" value="Gene" autofocus>
 													</div>
 												</div>
 												<div class="col-sm-6">
 													<div class="form-group">
 														<label for="lname">Last Name</label>
-														<input type="text" id="lname" class="form-control" value="Manlimos" readonly>
+														<input type="text" id="lname" class="form-control" value="Manlimos">
 													</div>
 												</div>
 											</div>
@@ -107,60 +112,33 @@
 												<div class="col-sm-6">
 													<div class="form-group">
 														<label for="position">Position</label>
-														<input type="text" id="position" class="form-control" value="Safety Officer" readonly>
+														<input type="text" id="position" class="form-control" value="Safety Officer">
 													</div>
 												</div>
 												<div class="col-sm-6">
 													<div class="form-group">
 														<label for="uname">Username</label>
-														<input type="text" id="uname" class="form-control" value="gene.manlimos" readonly>
-													</div>
-												</div>
-											</div>
-											<div class="row">
-												<div class="col-sm-6">
-													<div class="form-group">
-														<label for="">Password</label>
-														<button type="button" data-toggle="modal" data-target="#changeModal" class="btn btn-primary btn-block">Change Password</button>
+														<input type="text" id="uname" class="form-control" value="gene.manlimos">
 													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
+								<div class="panel-footer">
+									<div class="text-right">
+										<button type="submit" class="btn btn-success">Save Changes</a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<a href="account.html" class="btn btn-default">Back</a>
+						</div>
+					</div>
 				</section>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal fade" id="changeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		<div class="modal-dialog modal-sm" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					<h4 class="modal-title" id="myModalLabel">Change Password</h4>
-				</div>
-				<div class="modal-body">
-					<div class="form-group">
-						<label for="current_password">Current Password</label>
-						<input type="password" class="form-control">
-					</div>
-					<div class="form-group">
-						<label for="new_password">New Password</label>
-						<input type="password" class="form-control">
-					</div>
-					<div class="form-group">
-						<label for="retyped_new_password">Retype New Password</label>
-						<input type="password" class="form-control">
-					</div>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-					<button type="button" class="btn btn-success">Save changes</button>
-				</div>
 			</div>
 		</div>
 	</div>
