@@ -72,6 +72,7 @@
 						<div class="col-md-12">
 							<div class="margin-bottom-20">
 								<a href="#" role="button" class="btn btn-primary" data-toggle="modal" data-target="#addModal">Add Personnel</a>
+								<a href="work-center.html" class="btn btn-primary">View Work Center</a>
 							</div>
 						</div>
 					</div>
@@ -85,7 +86,7 @@
 											<div class="input-group">
 												<input type="search" id="search-item" class="form-control" placeholder="Search personnel...">
 												<span class="input-group-btn">
-													<button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i> <span class="sr-only">Search</span></button>
+													<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i> <span class="sr-only">Search</span></button>
 												</span>
 											</div>
 										</div>
@@ -94,7 +95,9 @@
 												<label for="work-center-filter">Filter by Work Center </label>
 												<select name="" id="work-center-filter" class="form-control">
 													<option value="All" selected>All</option>
-													<option value="Agus 6 HEP">Agus 6 HEP</option>
+													<option value="Agus 6 HEP">Agus 6 HEP (Maintenance)</option>
+													<option value="Agus 6 HEP">Agus 7 HEP (Technical)</option>
+													<option value="Agus 6 HEP">Agus 7 HEP (Maintenance)</option>
 													<option value="Maintenance">Maintenance</option>
 													<option value="Office of the Plant Manager">Office of the Plant Manager</option>
 												</select>
@@ -117,7 +120,7 @@
 											<tr>
 												<th scope="row">1</th>
 												<td>Alfeche, Wilfredo A.</td>
-												<td>Agus 6 HEP</td>
+												<td>Agus 6 HEP (Maintenance)</td>
 												<td>
 													<a href="#" data-toggle="modal" data-target="#editModal" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Edit</span></a>
 												</td>
@@ -128,7 +131,7 @@
 											<tr>
 												<th scope="row">2</th>
 												<td>Bas, Edgar N.</td>
-												<td>Agus 6 HEP</td>
+												<td>Agus 7 HEP (Technical)</td>
 												<td>
 													<a href="#" data-toggle="modal" data-target="#editModal" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Edit</span></a>
 												</td>
@@ -139,7 +142,7 @@
 											<tr>
 												<th scope="row">3</th>
 												<td>Cabusas, Auxiliador Y.</td>
-												<td>Agus 6 HEP</td>
+												<td>Agus 7 HEP (Maintenance)</td>
 												<td>
 													<a href="#" data-toggle="modal" data-target="#editModal" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Edit</span></a>
 												</td>
@@ -234,26 +237,26 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					<h4 class="modal-title" id="myModalLabel">Edit Henry Hiceta</h4>
+					<h4 class="modal-title" id="myModalLabel">Edit Wilfredo Alfeche</h4>
 				</div>
 				<div class="modal-body">
 					<div class="row">
 						<div class="col-md-4">
 							<div class="form-group">
 								<label for="first-name">First Name*</label>
-								<input type="text" class="form-control" id="first-name" value="Henry">
+								<input type="text" class="form-control" id="first-name" value="Wilfredo">
 							</div>
 						</div>
 						<div class="col-md-4">
 							<div class="form-group">
 								<label for="last-name">Last Name*</label>
-								<input type="text" class="form-control" id="last-name" value="Hiceta">
+								<input type="text" class="form-control" id="last-name" value="Alfeche">
 							</div>
 						</div>
 						<div class="col-md-4">
 							<div class="form-group">
 								<label for="middle-name">Middle Name*</label>
-								<input type="text" class="form-control" id="middle-name" value="Badelles">
+								<input type="text" class="form-control" id="middle-name" value="Ansis">
 							</div>
 						</div>
 					</div>
@@ -261,9 +264,11 @@
 						<div class="col-md-12">
 							<label for="">Work Center*</label>
 							<select class="form-control">
-								<option selected>Office of the Plant Manager</option>
+								<option selected>Agus 6 HEP (Maintenance)</option>
+								<option>Agus 7 HEP (Technical)</option>
+								<option>Agus 7 HEP (Maintenance)</option>
+								<option>Office of the Plant Manager</option>
 								<option>Maintenance</option>
-								<option>Agus 6 HEP</option>
 							</select>
 						</div>
 					</div>
