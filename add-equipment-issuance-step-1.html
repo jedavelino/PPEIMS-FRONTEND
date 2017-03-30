@@ -7,6 +7,7 @@
 	<title>Document</title>
 	
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page-dashboard">
@@ -26,9 +27,9 @@
 			<ul>
 				<li><a href="index.html">Dashboard</a></li>
 				<li><a href="equipment.html">Equipment</a></li>
-				<li class="current"><a href="equipment-batch.html">Equipment Batch</a></li>
+				<li><a href="equipment-batch.html">Equipment Batch</a></li>
 				<li><a href="personnel.html">Personnel</a></li>
-				<li><a href="equipment-issuance.html">Equipment Issuance</a></li>
+				<li class="current"><a href="equipment-issuance.html">Equipment Issuance</a></li>
 			</ul>
 		</div>
 	</div>
@@ -51,29 +52,27 @@
 		</nav>
 		<div class="content">
 			<div class="container-fluid">
-
 				<section class="section">
 					<div class="row">
 						<div class="col-md-12">
 							<ol class="breadcrumb">
 								<li><a href="index.html">Dashboard</a></li>
-								<li><a href="equipment-batch.html">Equipment Batch</a></li>
-								<li><a href="equipment-batch-drafts.html">Equipment Batch Drafts</a></li>
-								<li class="active">Edit Equipment Batch Step 1</li>
+								<li><a href="equipment-issuance.html">Equipment Issuance</a></li>
+								<li class="active">Add Equipment Issuance Step 1</li>
 							</ol>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-12">
 							<div class="row-header">
-								<h3>Edit Equipment Batch Step 1</h3>
-								<p>Select the equipment you want to edit in this batch.</p>
+								<h3>Add Equipment Issuance Step 1</h3>
+								<p>Select the personnel you want to add in this issuance.</p>
 							</div>
 						</div>
 					</div>
 					<div class="row margin-bottom-20">
 						<div class="col-md-3">
-							<strong>Batch:</strong> 003
+							<strong>Issuance:</strong> 003
 						</div>
 						<div class="col-md-3">
 							<strong>Date Added:</strong> March 20, 2017
@@ -82,7 +81,7 @@
 							<strong>Prepared by:</strong> G. Manlimos
 						</div>
 						<div class="col-md-3">
-							<strong>Total Items:</strong> 3
+							<strong>Total Personnel:</strong> 3
 						</div>
 					</div>
 					<div class="row">
@@ -91,17 +90,30 @@
 								<div class="panel-heading">
 									<div class="row">
 										<div class="col-md-4">
-											<label for="search-item" class="sr-only">Search Item</label>
+											<label for="search-item" class="sr-only">Search Personnel</label>
 											<div class="input-group">
-												<input type="search" id="search-item" class="form-control" placeholder="Search particulars...">
+												<input type="search" id="search-item" class="form-control" placeholder="Search personnel...">
 												<span class="input-group-btn">
-													<button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i></button>
+													<button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i> <span class="sr-only">Search</span></button>
 												</span>
 											</div>
 										</div>
-										<div class="col-md-8">
+										<div class="col-md-6">
+											<div class="form-inline">
+												<label for="work-center-filter">Filter by Work Center </label>
+												<select name="" id="work-center-filter" class="form-control">
+													<option value="All" selected>All</option>
+													<option value="Agus 6 HEP">Agus 6 HEP (Maintenance)</option>
+													<option value="Agus 6 HEP">Agus 7 HEP (Technical)</option>
+													<option value="Agus 6 HEP">Agus 7 HEP (Maintenance)</option>
+													<option value="Maintenance">Maintenance</option>
+													<option value="Office of the Plant Manager">Office of the Plant Manager</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-md-2">
 											<div class="text-right">
-												<a href="edit-equipment-batch-step-2.html" class="btn btn-primary">Proceed to Step 2 <i class="glyphicon glyphicon-chevron-right" aria-hidden="true"></i></a>
+												<a href="add-equipment-issuance-step-2.html" class="btn btn-primary">Proceed to Step 2 <i class="glyphicon glyphicon-chevron-right" aria-hidden="true"></i></a>
 											</div>
 										</div>
 									</div>
@@ -111,62 +123,50 @@
 										<thead>
 											<tr>
 												<th class="col-md-1">No.</th>
-												<th class="col-md-3">Particulars</th>
-												<th class="col-md-4">Description</th>
-												<th class="col-md-2">On Stock</th>
-												<th class="col-md-1">Status</th>
+												<th>Personnel</th>
+												<th>Work Center</th>
 												<th class="col-md-1">Add/Remove</th>
 											</tr>
 										</thead>
 										<tbody>
-											<tr>
+											<tr class="success">
 												<th class="col-md-1" scope="row">1</th>
-												<td class="col-md-3">Hard Hat (Blue)</td>
-												<td class="col-md-4">Lorem ipsum dolor sit amet.</td>
-												<td class="col-md-2">14 pcs</td>
-												<td class="col-md-1"></td>
+												<td>Alfeche, Wilfredo A.</td>
+												<td>Agus 6 HEP (Maintenance)</td>
 												<td class="col-md-1">
-													<a href="#" role="button" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-plus"></i></a>
+													<a href="#" role="button" data-toggle="tooltip" data-placement="top" title="Remove Personnel" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-remove" aria-hidden="true"></i> <span class="sr-only">Remove</span></a>
 												</td>
 											</tr>
-											<tr>
+											<tr class="success">
 												<th class="col-md-1" scope="row">2</th>
-												<td class="col-md-3">Hard Hat (Yellow)</td>
-												<td class="col-md-4">Lorem ipsum dolor sit amet.</td>
-												<td class="col-md-2">49 pcs</td>
-												<td class="col-md-1"><span class="label label-success">Added</span></td>
+												<td>Bas, Edgar N.</td>
+												<td>Agus 7 HEP (Technical)</td>
 												<td class="col-md-1">
-													<a href="#" role="button" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-remove"></i></a>
+													<a href="#" role="button" data-toggle="tooltip" data-placement="top" title="Remove Personnel" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-remove" aria-hidden="true"></i> <span class="sr-only">Remove</span></a>
 												</td>
 											</tr>
-											<tr>
+											<tr class="success">
 												<th class="col-md-1" scope="row">3</th>
-												<td class="col-md-3">Protective Eyewear</td>
-												<td class="col-md-4">Lorem ipsum dolor sit amet.</td>
-												<td class="col-md-2">15 pcs</td>
-												<td class="col-md-1"><span class="label label-success">Added</span></td>
+												<td>Cabusas, Auxiliador Y.</td>
+												<td>Agus 7 HEP (Maintenance)</td>
 												<td class="col-md-1">
-													<a href="#" role="button" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-remove"></i></a>
+													<a href="#" role="button" data-toggle="tooltip" data-placement="top" title="Remove Personnel" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-remove" aria-hidden="true"></i> <span class="sr-only">Remove</span></a>
 												</td>
 											</tr>
 											<tr>
 												<th class="col-md-1" scope="row">4</th>
-												<td class="col-md-3">Face Shield</td>
-												<td class="col-md-4">Lorem ipsum dolor sit amet.</td>
-												<td class="col-md-1">0 pcs</td>
-												<td class="col-md-1"><span class="label label-success">Added</span></td>
+												<td>Encabo, Romeo A.</td>
+												<td>Maintenance</td>
 												<td class="col-md-1">
-													<a href="#" role="button" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-remove"></i></a>
+													<a href="#" role="button" data-toggle="tooltip" data-placement="top" title="Add Personnel" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i> <span class="sr-only">Add</span></a>
 												</td>
 											</tr>
 											<tr>
 												<th class="col-md-1" scope="row">5</th>
-												<td class="col-md-3">Safety Shoes</td>
-												<td class="col-md-4">Lorem ipsum dolor sit amet.</td>
-												<td class="col-md-2">0 pairs</td>
-												<td class="col-md-1"></td>
+												<td>Hiceta, Henry B.</td>
+												<td>Office of the Plant Manager</td>
 												<td class="col-md-1">
-													<a href="#" role="button" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i></a>
+													<a href="#" role="button" data-toggle="tooltip" data-placement="top" title="Add Personnel" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i> <span class="sr-only">Add</span></a>
 												</td>
 											</tr>
 										</tbody>
@@ -176,7 +176,7 @@
 									<div class="row">
 										<div class="col-md-12">
 											<div class="text-right">
-												<a href="#" role="button" class="btn btn-success">Save Changes</a>
+												<a href="#" role="button" class="btn btn-success">Save as Draft</a>
 												<a href="#" role="button" data-toggle="modal" data-target="#deleteModal" class="btn btn-danger">Delete</a>
 											</div>
 										</div>
@@ -187,7 +187,7 @@
 					</div>
 					<div class="row">
 						<div class="col-md-12">
-							<a href="equipment-batch-drafts.html" class="btn btn-default">Back</a>
+							<a href="equipment-issuance.html" class="btn btn-default">Back</a>
 						</div>
 					</div>
 				</section>
