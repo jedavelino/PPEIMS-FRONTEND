@@ -65,23 +65,24 @@
 					<div class="row">
 						<div class="col-md-12">
 							<div class="row-header">
-								<h3>Adjust Equipment Batch Step 1</h3>
-								<p>Select the equipment you want to adjust in this batch.</p>
+								<h3>Adjust Equipment Batch Step 1 <small>prepared by G. Manlimos</small></h3>
 							</div>
 						</div>
 					</div>
 					<div class="row margin-bottom-20">
-						<div class="col-md-3">
-							<strong>Batch:</strong> 002
+						<div class="col-md-4">
+							<label for="search-item" class="sr-only">Search Item</label>
+							<div class="input-group">
+								<input type="search" id="search-item" class="form-control" placeholder="Search particulars...">
+								<span class="input-group-btn">
+									<button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i></button>
+								</span>
+							</div>
 						</div>
-						<div class="col-md-3">
-							<strong>Date Completed:</strong> February 10, 2017
-						</div>
-						<div class="col-md-3">
-							<strong>Prepared By:</strong> G. Manlimos
-						</div>
-						<div class="col-md-3">
-							<strong>Total Items:</strong> 5
+						<div class="col-md-8">
+							<div class="text-right">
+								<a href="adjust-equipment-batch-step-2.html" class="btn btn-primary">Proceed to Step 2</a>
+							</div>
 						</div>
 					</div>
 					<div class="row">
@@ -90,18 +91,13 @@
 								<div class="panel-heading">
 									<div class="row">
 										<div class="col-md-4">
-											<label for="search-item" class="sr-only">Search Item</label>
-											<div class="input-group">
-												<input type="search" id="search-item" class="form-control" placeholder="Search particulars...">
-												<span class="input-group-btn">
-													<button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i></button>
-												</span>
-											</div>
+											<strong>Batch:</strong> 002
 										</div>
-										<div class="col-md-8">
-											<div class="text-right">
-												<a href="adjust-equipment-batch-step-2.html" class="btn btn-primary">Proceed to Step 2 <i class="glyphicon glyphicon-chevron-right" aria-hidden="true"></i></a>
-											</div>
+										<div class="col-md-4">
+											<strong>Completed:</strong> February 10, 2017
+										</div>
+										<div class="col-md-4">
+											<strong>Total:</strong> 5
 										</div>
 									</div>
 								</div>
@@ -110,60 +106,54 @@
 										<thead>
 											<tr>
 												<th class="col-md-1">No.</th>
-												<th class="col-md-3">Particulars</th>
-												<th class="col-md-4">Description</th>
-												<th class="col-md-2">On Stock</th>
-												<th class="col-md-1">Status</th>
+												<th>Particulars</th>
+												<th>On Stock</th>
+												<th>Description</th>
 												<th class="col-md-1">Add/Remove</th>
 											</tr>
 										</thead>
 										<tbody>
-											<tr>
+											<tr class="success">
 												<th class="col-md-1" scope="row">1</th>
-												<td class="col-md-3">Hard Hat (Blue)</td>
-												<td class="col-md-4">Lorem ipsum dolor sit amet.</td>
-												<td class="col-md-2">14 pcs</td>
-												<td class="col-md-1"><span class="label label-success">Added</span></td>
+												<td>Hard Hat (Blue)</td>
+												<td>14 pcs</td>
+												<td>Lorem ipsum dolor sit amet.</td>
 												<td class="col-md-1">
 													<a href="#" role="button" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-remove"></i></a>
 												</td>
 											</tr>
-											<tr>
+											<tr class="success">
 												<th class="col-md-1" scope="row">2</th>
-												<td class="col-md-3">Hard Hat (Yellow)</td>
-												<td class="col-md-4">Lorem ipsum dolor sit amet.</td>
-												<td class="col-md-2">49 pcs</td>
-												<td class="col-md-1"><span class="label label-success">Added</span></td>
+												<td>Hard Hat (Yellow)</td>
+												<td>49 pcs</td>
+												<td>Lorem ipsum dolor sit amet.</td>
 												<td class="col-md-1">
 													<a href="#" role="button" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-remove"></i></a>
 												</td>
 											</tr>
-											<tr>
+											<tr class="success">
 												<th class="col-md-1" scope="row">3</th>
-												<td class="col-md-3">Protective Eyewear</td>
-												<td class="col-md-4">Lorem ipsum dolor sit amet.</td>
-												<td class="col-md-2">15 pcs</td>
-												<td class="col-md-1"><span class="label label-success">Added</span></td>
+												<td>Protective Eyewear</td>
+												<td>15 pcs</td>
+												<td>Lorem ipsum dolor sit amet.</td>
 												<td class="col-md-1">
 													<a href="#" role="button" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-remove"></i></a>
 												</td>
 											</tr>
-											<tr>
+											<tr class="success">
 												<th class="col-md-1" scope="row">4</th>
-												<td class="col-md-3">Face Shield</td>
-												<td class="col-md-4">Lorem ipsum dolor sit amet.</td>
-												<td class="col-md-1">0 pcs</td>
-												<td class="col-md-1"><span class="label label-success">Added</span></td>
+												<td>Face Shield</td>
+												<td>0 pcs</td>
+												<td>Lorem ipsum dolor sit amet.</td>
 												<td class="col-md-1">
 													<a href="#" role="button" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-remove"></i></a>
 												</td>
 											</tr>
-											<tr>
+											<tr class="success">
 												<th class="col-md-1" scope="row">5</th>
-												<td class="col-md-3">Safety Shoes</td>
-												<td class="col-md-4">Lorem ipsum dolor sit amet.</td>
-												<td class="col-md-2">0 pairs</td>
-												<td class="col-md-1"><span class="label label-success">Added</span></td>
+												<td>Safety Shoes</td>
+												<td>0 pairs</td>
+												<td>Lorem ipsum dolor sit amet.</td>
 												<td class="col-md-1">
 													<a href="#" role="button" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-remove" aria-hidden="true"></i></a>
 												</td>
