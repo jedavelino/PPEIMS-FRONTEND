@@ -71,8 +71,8 @@
 					<div class="row">
 						<div class="col-md-12">
 							<div class="margin-bottom-20">
-								<a href="add-equipment-batch-step-1.html" class="btn btn-primary">Add Equipment Batch</a>
-								<a href="equipment-batch-drafts.html" class="btn btn-primary">View Equipment Batch Drafts <span class="badge">1</span></a>
+								<a href="add-equipment-batch-step-1.html" class="btn btn-primary">Add Batch</a>
+								<a href="equipment-batch-drafts.html" class="btn btn-primary">View Batch Drafts <span class="badge">1</span></a>
 							</div>
 						</div>
 					</div>
@@ -97,21 +97,23 @@
 										<thead>
 											<tr>
 												<th class="col-md-1">No.</th>
-												<th class="col-md-2">Batch</th>
+												<th>Batch</th>
 												<th>Completed</th>
+												<th>Total Item</th>
 												<th>Prepared By</th>
-												<th class="col-md-1">Info</th>
+												<th class="col-md-1">View</th>
 												<th class="col-md-1">Adjust</th>
 											</tr>
 										</thead>
 										<tbody>
 											<tr>
 												<th class="col-md-1" scope="row">1</th>
-												<td class="col-md-2">002</td>
+												<td>002</td>
 												<td>02-10-2017</td>
+												<td>5</td>
 												<td>G. Manlimos</td>
 												<td class="col-md-1">
-													<a href="#" class="btn btn-info btn-xs" role="button" data-toggle="modal" data-target="#infoModal"><i class="glyphicon glyphicon-search" aria-hidden="true"></i> <span class="sr-only">View Info</span></a>
+													<a href="#" class="btn btn-info btn-xs" role="button" data-toggle="modal" data-target="#viewModal"><i class="glyphicon glyphicon-search" aria-hidden="true"></i> <span class="sr-only">View</span></a>
 												</td>
 												<td class="col-md-1">
 													<a href="adjust-equipment-batch-step-1.html" class="btn btn-warning btn-xs"><i class="glyphicon glyphicon-wrench" aria-hidden="true"></i> <span class="sr-only">Adjust</span></a>
@@ -119,11 +121,12 @@
 											</tr>
 											<tr>
 												<th class="col-md-1" scope="row">2</th>
-												<td class="col-md-2">001</td>
+												<td>001</td>
 												<td>12-25-2016</td>
+												<td>10</td>
 												<td>G. Manlimos</td>
 												<td class="col-md-1">
-													<a href="#" class="btn btn-info btn-xs" role="button" data-toggle="modal" data-target="#infoModal"><i class="glyphicon glyphicon-search" aria-hidden="true"></i> <span class="sr-only">View Info</span></a>
+													<a href="#" class="btn btn-info btn-xs" role="button" data-toggle="modal" data-target="#viewModal"><i class="glyphicon glyphicon-search" aria-hidden="true"></i> <span class="sr-only">View</span></a>
 												</td>
 												<td class="col-md-1">
 													<a href="adjust-equipment-batch-step-1.html" class="btn btn-warning btn-xs disabled"><i class="glyphicon glyphicon-wrench" aria-hidden="true"></i> <span class="sr-only">Adjust</span></a>
@@ -141,7 +144,7 @@
 	</div>
 
 	<!-- Modal -->
-	<div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal fade" id="viewModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		<div class="modal-dialog modal-lg" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -239,6 +242,7 @@
 				</div>
 			</div>
 		</div>
+	</div>
 
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
