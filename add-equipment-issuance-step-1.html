@@ -65,23 +65,37 @@
 					<div class="row">
 						<div class="col-md-12">
 							<div class="row-header">
-								<h3>Add Equipment Issuance Step 1</h3>
-								<p>Select the personnel you want to add in this issuance.</p>
+								<h3>Add Equipment Issuance Step 1 <small>prepared by G. Manlimos</small></h3>
 							</div>
 						</div>
 					</div>
 					<div class="row margin-bottom-20">
-						<div class="col-md-3">
-							<strong>Issuance:</strong> 003
+						<div class="col-md-4">
+							<label for="search-item" class="sr-only">Search Personnel</label>
+							<div class="input-group">
+								<input type="search" id="search-item" class="form-control" placeholder="Search personnel...">
+								<span class="input-group-btn">
+									<button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i> <span class="sr-only">Search</span></button>
+								</span>
+							</div>
 						</div>
-						<div class="col-md-3">
-							<strong>Date Added:</strong> March 20, 2017
+						<div class="col-md-6">
+							<div class="form-inline">
+								<label for="work-center-filter">Filter by </label>
+								<select name="" id="work-center-filter" class="form-control">
+									<option value="All" selected>All</option>
+									<option value="Agus 6 HEP">Agus 6 HEP (Maintenance)</option>
+									<option value="Agus 6 HEP">Agus 7 HEP (Technical)</option>
+									<option value="Agus 6 HEP">Agus 7 HEP (Maintenance)</option>
+									<option value="Maintenance">Maintenance</option>
+									<option value="Office of the Plant Manager">Office of the Plant Manager</option>
+								</select>
+							</div>
 						</div>
-						<div class="col-md-3">
-							<strong>Prepared by:</strong> G. Manlimos
-						</div>
-						<div class="col-md-3">
-							<strong>Total Personnel:</strong> 3
+						<div class="col-md-2">
+							<div class="text-right">
+								<a href="add-equipment-issuance-step-2.html" class="btn btn-primary">Proceed to Step 2</a>
+							</div>
 						</div>
 					</div>
 					<div class="row">
@@ -90,31 +104,13 @@
 								<div class="panel-heading">
 									<div class="row">
 										<div class="col-md-4">
-											<label for="search-item" class="sr-only">Search Personnel</label>
-											<div class="input-group">
-												<input type="search" id="search-item" class="form-control" placeholder="Search personnel...">
-												<span class="input-group-btn">
-													<button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i> <span class="sr-only">Search</span></button>
-												</span>
-											</div>
+											<strong>Issuance:</strong> 003
 										</div>
-										<div class="col-md-6">
-											<div class="form-inline">
-												<label for="work-center-filter">Filter by Work Center </label>
-												<select name="" id="work-center-filter" class="form-control">
-													<option value="All" selected>All</option>
-													<option value="Agus 6 HEP">Agus 6 HEP (Maintenance)</option>
-													<option value="Agus 6 HEP">Agus 7 HEP (Technical)</option>
-													<option value="Agus 6 HEP">Agus 7 HEP (Maintenance)</option>
-													<option value="Maintenance">Maintenance</option>
-													<option value="Office of the Plant Manager">Office of the Plant Manager</option>
-												</select>
-											</div>
+										<div class="col-md-4">
+											<strong>Added:</strong> March 20, 2017
 										</div>
-										<div class="col-md-2">
-											<div class="text-right">
-												<a href="add-equipment-issuance-step-2.html" class="btn btn-primary">Proceed to Step 2 <i class="glyphicon glyphicon-chevron-right" aria-hidden="true"></i></a>
-											</div>
+										<div class="col-md-4">
+											<strong>Total Item:</strong> 3
 										</div>
 									</div>
 								</div>
@@ -191,6 +187,24 @@
 						</div>
 					</div>
 				</section>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Delete Issuance</h4>
+				</div>
+				<div class="modal-body">
+					<p>Are you sure you want to delete this issuance?</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+					<button type="button" class="btn btn-danger">Delete</button>
+				</div>
 			</div>
 		</div>
 	</div>
