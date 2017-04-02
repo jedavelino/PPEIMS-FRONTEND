@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Document</title>
-	
+
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -64,23 +64,16 @@
 					<div class="row">
 						<div class="col-md-12">
 							<div class="row-header">
-								<h3>Adjust Issuance Step 1 <small>prepared by G. Manlimos</small></h3>
-							</div>
-						</div>
-					</div>
-					<div class="row margin-bottom-20">
-						<div class="col-md-4">
-							<label for="search-item" class="sr-only">Search Item</label>
-							<div class="input-group">
-								<input type="search" id="search-item" class="form-control" placeholder="Search particulars...">
-								<span class="input-group-btn">
-									<button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i></button>
-								</span>
-							</div>
-						</div>
-						<div class="col-md-8">
-							<div class="text-right">
-								<a href="adjust-equipment-issuance-step-2.html" class="btn btn-primary">Proceed to Step 2</a>
+								<div class="row">
+									<div class="col-md-8">
+										<h1 class="page-title">Adjust Issuance Step 1</h1>
+									</div>
+									<div class="col-md-4">
+										<div class="text-right">
+											<a href="adjust-equipment-issuance-step-2.html" class="btn btn-primary">Proceed to Step 2</a>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -90,13 +83,28 @@
 								<div class="panel-heading">
 									<div class="row">
 										<div class="col-md-4">
-											<strong>Batch:</strong> 003
+											<label for="search-item" class="sr-only">Search Item</label>
+											<div class="input-group">
+												<input type="search" id="search-item" class="form-control" placeholder="Search personnel...">
+												<span class="input-group-btn">
+													<button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i> <span class="sr-only">Search</span></button>
+												</span>
+											</div>
 										</div>
-										<div class="col-md-4">
-											<strong>Completed:</strong> February 14, 2017
-										</div>
-										<div class="col-md-4">
-											<strong>Total Item:</strong> 5
+										<div class="col-md-8">
+											<div class="btn-group">
+												<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													Filter by Work Center <span class="caret"></span>
+												</button>
+												<ul class="dropdown-menu">
+													<li><a href="#">All</a></li>
+													<li><a href="#">Agus 6 HEP (Maintenance)</a></li>
+													<li><a href="#">Agus 7 HEP (Technical)</a></li>
+													<li><a href="#">Agus 7 HEP (Maintenance)</a></li>
+													<li><a href="#">Maintenance</a></li>
+													<li><a href="#">Office of the Plant Manager</a></li>
+												</ul>
+											</div>
 										</div>
 									</div>
 								</div>

@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Document</title>
-	
+
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -64,15 +64,17 @@
 					<div class="row">
 						<div class="col-md-12">
 							<div class="row-header">
-								<h3>Personnel</h3>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-							<div class="margin-bottom-20">
-								<a href="#" role="button" class="btn btn-primary" data-toggle="modal" data-target="#addModal">Add Personnel</a>
-								<a href="work-center.html" class="btn btn-primary">View Work Center</a>
+								<div class="row">
+									<div class="col-md-6">
+										<h1 class="page-title">Personnel</h1>
+									</div>
+									<div class="col-md-6">
+										<div class="text-right">
+											<a href="#" role="button" class="btn btn-primary" data-toggle="modal" data-target="#addModal">Add Personnel</a>
+											<a href="work-center.html" class="btn btn-primary">Work Centers</a>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -91,16 +93,18 @@
 											</div>
 										</div>
 										<div class="col-md-8">
-											<div class="form-inline">
-												<label for="work-center-filter">Filter by </label>
-												<select name="" id="work-center-filter" class="form-control">
-													<option value="All" selected>All</option>
-													<option value="Agus 6 HEP">Agus 6 HEP (Maintenance)</option>
-													<option value="Agus 6 HEP">Agus 7 HEP (Technical)</option>
-													<option value="Agus 6 HEP">Agus 7 HEP (Maintenance)</option>
-													<option value="Maintenance">Maintenance</option>
-													<option value="Office of the Plant Manager">Office of the Plant Manager</option>
-												</select>
+											<div class="btn-group">
+												<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													Filter by Work Center <span class="caret"></span>
+												</button>
+												<ul class="dropdown-menu">
+													<li><a href="#">All</a></li>
+													<li><a href="#">Agus 6 HEP (Maintenance)</a></li>
+													<li><a href="#">Agus 7 HEP (Technical)</a></li>
+													<li><a href="#">Agus 7 HEP (Maintenance)</a></li>
+													<li><a href="#">Maintenance</a></li>
+													<li><a href="#">Office of the Plant Manager</a></li>
+												</ul>
 											</div>
 										</div>
 									</div>
@@ -110,8 +114,8 @@
 										<thead>
 											<tr>
 												<th class="col-md-1">No.</th>
-												<th class="col-md-4">Personnel</th>
-												<th class="col-md-5">Work Center</th>
+												<th>Personnel</th>
+												<th>Work Center</th>
 												<th class="col-md-1">Edit</th>
 												<th class="col-md-1">Delete</th>
 											</tr>
@@ -119,57 +123,57 @@
 										<tbody>
 											<tr>
 												<th class="col-md-1" scope="row">1</th>
-												<td class="col-md-4">Alfeche, Wilfredo A.</td>
-												<td class="col-md-5">Agus 6 HEP (Maintenance)</td>
+												<td>Alfeche, Wilfredo A.</td>
+												<td>Agus 6 HEP (Maintenance)</td>
 												<td class="col-md-1">
-													<button type="button" data-toggle="modal" data-target="#editModal" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Edit</span></button>
+													<button type="button" data-toggle="modal" data-target="#editModal" class="btn btn-success btn-xs"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Edit</span></button>
 												</td>
 												<td class="col-md-1">
-													<button type="button" data-toggle="modal" data-target="#deleteModal" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-trash" aria-hidden="true"></i> <span class="sr-only">Delete</span></button>
+													<button type="button" data-toggle="modal" data-target="#deleteModal" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-trash" aria-hidden="true"></i> <span class="sr-only">Delete</span></button>
 												</td>
 											</tr>
 											<tr>
 												<th class="col-md-1" scope="row">2</th>
-												<td class="col-md-4">Bas, Edgar N.</td>
-												<td class="col-md-5">Agus 7 HEP (Technical)</td>
+												<td>Bas, Edgar N.</td>
+												<td>Agus 7 HEP (Technical)</td>
 												<td class="col-md-1">
-													<button type="button" data-toggle="modal" data-target="#editModal" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Edit</span></button>
+													<button type="button" data-toggle="modal" data-target="#editModal" class="btn btn-success btn-xs"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Edit</span></button>
 												</td>
 												<td class="col-md-1">
-													<button type="button" data-toggle="modal" data-target="#deleteModal" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-trash" aria-hidden="true"></i> <span class="sr-only">Delete</span></button>
+													<button type="button" data-toggle="modal" data-target="#deleteModal" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-trash" aria-hidden="true"></i> <span class="sr-only">Delete</span></button>
 												</td>
 											</tr>
 											<tr>
 												<th class="col-md-1" scope="row">3</th>
-												<td class="col-md-4">Cabusas, Auxiliador Y.</td>
-												<td class="col-md-5">Agus 7 HEP (Maintenance)</td>
+												<td>Cabusas, Auxiliador Y.</td>
+												<td>Agus 7 HEP (Maintenance)</td>
 												<td class="col-md-1">
-													<button type="button" data-toggle="modal" data-target="#editModal" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Edit</span></button>
+													<button type="button" data-toggle="modal" data-target="#editModal" class="btn btn-success btn-xs"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Edit</span></button>
 												</td>
 												<td class="col-md-1">
-													<button type="button" data-toggle="modal" data-target="#deleteModal" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-trash" aria-hidden="true"></i> <span class="sr-only">Delete</span></button>
+													<button type="button" data-toggle="modal" data-target="#deleteModal" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-trash" aria-hidden="true"></i> <span class="sr-only">Delete</span></button>
 												</td>
 											</tr>
 											<tr>
 												<th class="col-md-1" scope="row">4</th>
-												<td class="col-md-4">Encabo, Romeo A.</td>
-												<td class="col-md-5">Maintenance</td>
+												<td>Encabo, Romeo A.</td>
+												<td>Maintenance</td>
 												<td class="col-md-1">
-													<button type="button" data-toggle="modal" data-target="#editModal" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Edit</span></button>
+													<button type="button" data-toggle="modal" data-target="#editModal" class="btn btn-success btn-xs"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Edit</span></button>
 												</td>
 												<td class="col-md-1">
-													<button type="button" data-toggle="modal" data-target="#deleteModal" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-trash" aria-hidden="true"></i> <span class="sr-only">Delete</span></button>
+													<button type="button" data-toggle="modal" data-target="#deleteModal" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-trash" aria-hidden="true"></i> <span class="sr-only">Delete</span></button>
 												</td>
 											</tr>
 											<tr>
 												<th class="col-md-1" scope="row">5</th>
-												<td class="col-md-4">Hiceta, Henry B.</td>
-												<td class="col-md-5">Office of the Plant Manager</td>
+												<td>Hiceta, Henry B.</td>
+												<td>Office of the Plant Manager</td>
 												<td class="col-md-1">
-													<button type="button" data-toggle="modal" data-target="#editModal" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Edit</span></button>
+													<button type="button" data-toggle="modal" data-target="#editModal" class="btn btn-success btn-xs"><i class="glyphicon glyphicon-edit" aria-hidden="true"></i> <span class="sr-only">Edit</span></button>
 												</td>
 												<td class="col-md-1">
-													<button type="button" data-toggle="modal" data-target="#deleteModal" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-trash" aria-hidden="true"></i> <span class="sr-only">Delete</span></button>
+													<button type="button" data-toggle="modal" data-target="#deleteModal" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-trash" aria-hidden="true"></i> <span class="sr-only">Delete</span></button>
 												</td>
 											</tr>
 										</tbody>

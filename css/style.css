@@ -88,10 +88,10 @@
 	color: #FFF;
 }
 
-.navbar--blue .nav .open > a, 
-.navbar--blue .nav .open > a:focus, 
+.navbar--blue .nav .open > a,
+.navbar--blue .nav .open > a:focus,
 .navbar--blue .nav .open > a:hover,
-.navbar--blue .nav > li > a:focus, 
+.navbar--blue .nav > li > a:focus,
 .navbar--blue .nav > li > a:hover,
 .navbar--blue > li > .dropdown-menu {
 	background-color: #0578BC;
@@ -110,9 +110,18 @@
 	margin-top: 20px;
 }
 
+.margin-0 {
+	margin: 0;
+}
+
+.page-title {
+	font-size: 33px;
+	margin: 0;
+}
+
 .row-header {
 	margin-top: 20px;
 	margin-bottom: 20px;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 	border-bottom: 1px solid #eee;
 }

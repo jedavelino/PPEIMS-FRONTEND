@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Document</title>
-	
+
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -58,30 +58,23 @@
 								<li><a href="index.html">Dashboard</a></li>
 								<li><a href="equipment-issuance.html">Issuance</a></li>
 								<li><a href="equipment-issuance-drafts.html">Issuance Drafts</a></li>
-								<li class="active">Edit Issuance Draft Step 1</li>
+								<li class="active">Edit Issuance Step 1</li>
 							</ol>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-12">
 							<div class="row-header">
-								<h3>Edit Issuance Draft Step 1 <small>prepared by G. Manlimos</small></h3>
-							</div>
-						</div>
-					</div>
-					<div class="row margin-bottom-20">
-						<div class="col-md-4">
-							<label for="search-item" class="sr-only">Search Personnel</label>
-							<div class="input-group">
-								<input type="search" id="search-personnel" class="form-control" placeholder="Search personnel...">
-								<span class="input-group-btn">
-									<button class="btn btn-default" id="search-personnel" type="submit"><i class="glyphicon glyphicon-search"></i> <span class="sr-only">Search</span></button>
-								</span>
-							</div>
-						</div>
-						<div class="col-md-8">
-							<div class="text-right">
-								<a href="edit-equipment-issuance-step-2.html" class="btn btn-primary">Proceed to Step 2</a>
+								<div class="row">
+									<div class="col-md-8">
+										<h1 class="page-title">Edit Issuance Step 1</h1>
+									</div>
+									<div class="col-md-4">
+										<div class="text-right">
+											<a href="edit-equipment-issuance-step-2.html" class="btn btn-primary">Proceed to Step 2</a>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -91,13 +84,28 @@
 								<div class="panel-heading">
 									<div class="row">
 										<div class="col-md-4">
-											<strong>Issuance:</strong> 004
+											<label for="search-item" class="sr-only">Search Personnel</label>
+											<div class="input-group">
+												<input type="search" id="search-personnel" class="form-control" placeholder="Search personnel...">
+												<span class="input-group-btn">
+													<button class="btn btn-default" id="search-personnel" type="submit"><i class="glyphicon glyphicon-search"></i> <span class="sr-only">Search</span></button>
+												</span>
+											</div>
 										</div>
-										<div class="col-md-4">
-											<strong>Drafted:</strong> March 20, 2017
-										</div>
-										<div class="col-md-4">
-											<strong>Total Item:</strong> 3
+										<div class="col-md-8">
+											<div class="btn-group">
+												<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													Filter by Work Center <span class="caret"></span>
+												</button>
+												<ul class="dropdown-menu">
+													<li><a href="#">All</a></li>
+													<li><a href="#">Agus 6 HEP (Maintenance)</a></li>
+													<li><a href="#">Agus 7 HEP (Technical)</a></li>
+													<li><a href="#">Agus 7 HEP (Maintenance)</a></li>
+													<li><a href="#">Maintenance</a></li>
+													<li><a href="#">Office of the Plant Manager</a></li>
+												</ul>
+											</div>
 										</div>
 									</div>
 								</div>
