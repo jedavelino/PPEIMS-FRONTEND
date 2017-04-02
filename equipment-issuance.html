@@ -69,8 +69,9 @@
 									</div>
 									<div class="col-md-4">
 										<div class="text-right">
-											<a href="add-equipment-issuance-step-1.html" class="btn btn-primary">Add Issuance</a>
-											<a href="equipment-issuance-drafts.html" class="btn btn-primary">Issuance Drafts <span class="badge">1</span></a>
+											<!-- <a href="add-equipment-issuance-step-1.html" class="btn btn-primary">Add Issuance</a> -->
+											<a href="edit-equipment-issuance-step-1.html" class="btn btn-success">Resume Issuance</a>
+											<!-- <a href="equipment-issuance-drafts.html" class="btn btn-primary">Issuance Drafts <span class="badge">1</span></a> -->
 										</div>
 									</div>
 								</div>
@@ -107,8 +108,21 @@
 											</tr>
 										</thead>
 										<tbody>
-											<tr>
+											<tr class="active">
 												<th scope="row">1</th>
+												<td>004</td>
+												<td><span class="label label-default">Pending</span></td>
+												<td>5</td>
+												<td>G. Manlimos</td>
+												<td class="col-md-1">
+													<button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#viewModal"><i class="glyphicon glyphicon-search" aria-hidden="true"></i> <span class="sr-only">View</span></button>
+												</td>
+												<td class="col-md-1">
+													<a href="adjust-equipment-issuance-step-1.html" class="btn btn-warning btn-xs disabled"><i class="glyphicon glyphicon-wrench" aria-hidden="true"></i> <span class="sr-only">Adjust</span></a>
+												</td>
+											</tr>
+											<tr>
+												<th scope="row">2</th>
 												<td>003</td>
 												<td>02-14-2017</td>
 												<td>5</td>
@@ -121,7 +135,7 @@
 												</td>
 											</tr>
 											<tr>
-												<th scope="row">2</th>
+												<th scope="row">3</th>
 												<td>002</td>
 												<td>12-05-2016</td>
 												<td>10</td>
@@ -134,7 +148,7 @@
 												</td>
 											</tr>
 											<tr>
-												<th scope="row">3</th>
+												<th scope="row">4</th>
 												<td>001</td>
 												<td>01-01-2016</td>
 												<td>15</td>
