@@ -48,7 +48,7 @@
 					</div>
 					<ul class="nav navbar-nav navbar-right">
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manlimos <spa class="caret"></span></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Lemence <spa class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li><a href="#">Log Out</a></li>
 							</ul>
@@ -70,7 +70,8 @@
 									<div class="col-md-6">
 										<div class="text-right">
 											<a href="add-equipment-batch-step-1.html" class="btn btn-primary"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i> Add</a>
-											<a href="equipment-batch-drafts.html" class="btn btn-primary">Batch Drafts <span class="badge">1</span></a>
+											<a href="edit-equipment-batch-step-1.html" class="btn btn-success"><i class="glyphicon glyphicon-share-alt" aria-hidden="true"></i> Resume</a>
+											<a href="adjust-equipment-batch-step-1.html" class="btn btn-warning"><i class="glyphicon glyphicon-share-alt" aria-hidden="true"></i> Resume</a>
 										</div>
 									</div>
 								</div>
@@ -93,45 +94,57 @@
 										</div>
 									</div>
 								</div>
-								<div class="table-responsive">
+								<div class="table-responsive max-height-350">
 									<table class="table table-bordered">
 										<thead>
 											<tr>
 												<th class="col-md-1">No.</th>
 												<th>Batch</th>
-												<th>Completed</th>
 												<th>Total Item</th>
-												<th>Prepared By</th>
+												<th>Completed</th>
+												<th class="col-md-1">Action</th>
 												<th class="col-md-1">View</th>
-												<th class="col-md-1">Adjust</th>
 											</tr>
 										</thead>
 										<tbody>
-											<tr>
+											<tr class="success">
 												<th class="col-md-1" scope="row">1</th>
-												<td>002</td>
-												<td>02-10-2017</td>
+												<td>003</td>
 												<td>5</td>
-												<td>G. Manlimos</td>
+												<td><span class="label label-success">Pending</span></td>
 												<td class="col-md-1">
-													<a href="#" class="btn btn-info btn-xs" role="button" data-toggle="modal" data-target="#viewModal"><i class="glyphicon glyphicon-search" aria-hidden="true"></i> <span class="sr-only">View</span></a>
+													<a href="edit-equipment-batch-step-1.html" class="btn btn-success btn-xs" data-toggle="tooltip" data-placement="left" title="Resume"><i class="glyphicon glyphicon-share-alt" aria-hidden="true"></i> <span class="sr-only">Adjust</span></a>
 												</td>
 												<td class="col-md-1">
-													<a href="adjust-equipment-batch-step-1.html" class="btn btn-warning btn-xs"><i class="glyphicon glyphicon-wrench" aria-hidden="true"></i> <span class="sr-only">Adjust</span></a>
+													<a href="#" class="btn btn-success btn-xs" role="button" data-toggle="modal" data-target="#viewResumeModal"><i class="glyphicon glyphicon-search" aria-hidden="true"></i> <span class="sr-only">View</span></a>
 												</td>
+												
+											</tr>
+											<tr class="warning">
+												<th class="col-md-1" scope="row">2</th>
+												<td>002</td>
+												<td>5</td>
+												<td><span class="label label-warning">Adjusting</span></td>
+												<td class="col-md-1">
+													<a href="adjust-equipment-batch-step-1.html" class="btn btn-warning btn-xs" data-toggle="tooltip" data-placement="left" title="Resume"><i class="glyphicon glyphicon-share-alt" aria-hidden="true"></i> <span class="sr-only">Adjust</span></a>
+												</td>
+												<td class="col-md-1">
+													<a href="#" class="btn btn-warning btn-xs" role="button" data-toggle="modal" data-target="#viewResumeAdjustModal"><i class="glyphicon glyphicon-search" aria-hidden="true"></i> <span class="sr-only">View</span></a>
+												</td>
+												
 											</tr>
 											<tr>
-												<th class="col-md-1" scope="row">2</th>
+												<th class="col-md-1" scope="row">3</th>
 												<td>001</td>
-												<td>12-25-2016</td>
 												<td>10</td>
-												<td>G. Manlimos</td>
+												<td>December 25, 2016</td>
 												<td class="col-md-1">
-													<a href="#" class="btn btn-info btn-xs" role="button" data-toggle="modal" data-target="#viewModal"><i class="glyphicon glyphicon-search" aria-hidden="true"></i> <span class="sr-only">View</span></a>
+													<a href="adjust-equipment-batch-step-1.html" class="btn btn-default btn-xs" data-toggle="tooltip" data-placement="left" title="Adjust"><i class="glyphicon glyphicon-wrench" aria-hidden="true"></i> <span class="sr-only">Adjust</span></a>
 												</td>
 												<td class="col-md-1">
-													<a href="adjust-equipment-batch-step-1.html" class="btn btn-warning btn-xs"><i class="glyphicon glyphicon-wrench" aria-hidden="true"></i> <span class="sr-only">Adjust</span></a>
+													<a href="#" class="btn btn-default btn-xs" role="button" data-toggle="modal" data-target="#viewModal"><i class="glyphicon glyphicon-search" aria-hidden="true"></i> <span class="sr-only">View</span></a>
 												</td>
+												
 											</tr>
 										</tbody>
 									</table>
@@ -150,87 +163,62 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					<h4>Batch Info</h4>
+					<h4>Batch 001</h4>
 				</div>
 				<div class="modal-body">
 					<div class="panel panel-default">
-						<div class="panel-heading">
-							<div class="row">
-								<div class="col-md-4">
-									<strong>Batch:</strong> 002
-								</div>
-								<div class="col-md-4">
-									<strong>Completed:</strong> February 10, 2017
-								</div>
-								<div class="col-md-4">
-									<strong>Total Item:</strong> 5
-								</div>
-							</div>
-						</div>
 						<div class="table-responsive">
 							<table class="table table-bordered">
 								<thead>
 									<tr>
 										<th>No.</th>
 										<th>Particulars</th>
-										<th>On Stock</th>
-										<th>New Stock</th>
-										<th>Total Stock</th>
-										<th>Reorder Point</th>
-										<th>Expiration Date</th>
-										<th>Remarks</th>
+										<th>In Stock</th>
+										<th>Added</th>
+										<th>Threshold</th>
+										<th>Expiry Date</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
 										<th scope="row">1</th>
 										<td>Hard Hat (Blue)</td>
-										<td>10 pcs</td>
-										<td>50 pcs</td>
 										<td>60 pcs</td>
+										<td>50 pcs</td>
 										<td>15 pcs</td>
 										<td>02-10-2020</td>
-										<td></td>
 									</tr>
 									<tr>
 										<th scope="row">2</th>
 										<td>Hard Hat (Yellow)</td>
-										<td>20 pcs</td>
+										<td>40 pcs</td>
 										<td>29 pcs</td>
-										<td>49 pcs</td>
 										<td>10 pcs</td>
 										<td>02-10-2019</td>
-										<td></td>
 									</tr>
 									<tr>
 										<th scope="row">3</th>
 										<td>Protective Eyewear</td>
-										<td>40 pcs</td>
-										<td>40 pcs</td>
 										<td>80 pcs</td>
+										<td>40 pcs</td>
 										<td>20 pcs</td>
 										<td>02-10-2018</td>
-										<td>Lorem ipsum dolor.</td>
 									</tr>
 									<tr>
 										<th scope="row">4</th>
 										<td>Face Shield</td>
-										<td>30 pcs</td>
-										<td>70 pcs</td>
 										<td>100 pcs</td>
+										<td>70 pcs</td>
 										<td>10 pcs</td>
 										<td>02-10-2020</td>
-										<td></td>
 									</tr>
 									<tr>
 										<th scope="row">5</th>
 										<td>Safety Shoes</td>
-										<td>50 pairs</td>
-										<td>30 pairs</td>
 										<td>80 pairs</td>
+										<td>30 pairs</td>
 										<td>20 pairs</td>
 										<td>02-10-2018</td>
-										<td></td>
 									</tr>
 								</tbody>
 							</table>
@@ -239,7 +227,156 @@
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-warning" data-dismiss="modal"><i class="glyphicon glyphicon-wrench" aria-hidden="true"></i> Adjust</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="viewResumeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4>Batch 002</h4>
+				</div>
+				<div class="modal-body">
+					<div class="panel panel-default">
+						<div class="table-responsive">
+							<table class="table table-bordered">
+								<thead>
+									<tr>
+										<th>No.</th>
+										<th>Particulars</th>
+										<th>In Stock</th>
+										<th>Added</th>
+										<th>Threshold</th>
+										<th>Expiry Date</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1</th>
+										<td>Hard Hat (Blue)</td>
+										<td>60 pcs</td>
+										<td>50 pcs</td>
+										<td>15 pcs</td>
+										<td>02-10-2020</td>
+									</tr>
+									<tr>
+										<th scope="row">2</th>
+										<td>Hard Hat (Yellow)</td>
+										<td>40 pcs</td>
+										<td>29 pcs</td>
+										<td>10 pcs</td>
+										<td>02-10-2019</td>
+									</tr>
+									<tr>
+										<th scope="row">3</th>
+										<td>Protective Eyewear</td>
+										<td>80 pcs</td>
+										<td>40 pcs</td>
+										<td>20 pcs</td>
+										<td>02-10-2018</td>
+									</tr>
+									<tr>
+										<th scope="row">4</th>
+										<td>Face Shield</td>
+										<td>100 pcs</td>
+										<td>70 pcs</td>
+										<td>10 pcs</td>
+										<td>02-10-2020</td>
+									</tr>
+									<tr>
+										<th scope="row">5</th>
+										<td>Safety Shoes</td>
+										<td>80 pairs</td>
+										<td>30 pairs</td>
+										<td>20 pairs</td>
+										<td>02-10-2018</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<a href="edit-equipment-batch-step-1.html" class="btn btn-success">Resume</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="viewResumeAdjustModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4>Batch 002</h4>
+				</div>
+				<div class="modal-body">
+					<div class="panel panel-default">
+						<div class="table-responsive">
+							<table class="table table-bordered">
+								<thead>
+									<tr>
+										<th>No.</th>
+										<th>Particulars</th>
+										<th>In Stock</th>
+										<th>Added</th>
+										<th>Threshold</th>
+										<th>Expiry Date</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1</th>
+										<td>Hard Hat (Blue)</td>
+										<td>60 pcs</td>
+										<td>50 pcs</td>
+										<td>15 pcs</td>
+										<td>02-10-2020</td>
+									</tr>
+									<tr>
+										<th scope="row">2</th>
+										<td>Hard Hat (Yellow)</td>
+										<td>40 pcs</td>
+										<td>29 pcs</td>
+										<td>10 pcs</td>
+										<td>02-10-2019</td>
+									</tr>
+									<tr>
+										<th scope="row">3</th>
+										<td>Protective Eyewear</td>
+										<td>80 pcs</td>
+										<td>40 pcs</td>
+										<td>20 pcs</td>
+										<td>02-10-2018</td>
+									</tr>
+									<tr>
+										<th scope="row">4</th>
+										<td>Face Shield</td>
+										<td>100 pcs</td>
+										<td>70 pcs</td>
+										<td>10 pcs</td>
+										<td>02-10-2020</td>
+									</tr>
+									<tr>
+										<th scope="row">5</th>
+										<td>Safety Shoes</td>
+										<td>80 pairs</td>
+										<td>30 pairs</td>
+										<td>20 pairs</td>
+										<td>02-10-2018</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<a href="edit-equipment-batch-step-1.html" class="btn btn-warning">Resume</a>
 				</div>
 			</div>
 		</div>

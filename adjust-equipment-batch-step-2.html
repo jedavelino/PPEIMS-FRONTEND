@@ -52,7 +52,7 @@
 					</div>
 					<ul class="nav navbar-nav navbar-right">
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manlimos <spa class="caret"></span></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Lemence <spa class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li><a href="#">Log Out</a></li>
 							</ul>
@@ -67,121 +67,96 @@
 					<div class="row">
 						<div class="col-md-12">
 							<div class="row-header">
-								<h1 class="page-title">Adjust Batch Step 2 <small>prepared by G. Manlimos</small></h1>
+								<h1 class="page-title">Adjust Batch Step 2</h1>
 							</div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-12">
 							<div class="panel panel-default">
-								<div class="panel-heading">
-									<div class="row">
-										<div class="col-md-4">
-											<strong>Batch:</strong> 002
-										</div>
-										<div class="col-md-4">
-											<strong>Completed:</strong> February 10, 2017
-										</div>
-										<div class="col-md-4">
-											<strong>Total Item:</strong> 5
-										</div>
-									</div>
-								</div>
 								<div class="table-responsive">
 									<table class="table table-bordered">
 										<thead>
 											<tr>
 												<th>No.</th>
 												<th>Particulars</th>
-												<th>On Stock</th>
-												<th>New Stock</th>
-												<th>Total Stock</th>
-												<th>Reorder Point</th>
-												<th>Expiration Date</th>
-												<th>Remarks</th>
-												<th class="col-md-1">Update</th>
-												<th class="col-md-1">Remove</th>
+												<th>In Stock</th>
+												<th>Added</th>
+												<th>Threshold</th>
+												<th>Expiry</th>
+												<th class="col-md-1">Add</th>
+												<th class="col-md-1">Undo</th>
 											</tr>
 										</thead>
 										<tbody>
 											<tr class="success">
 												<th scope="row">1</th>
 												<td>Hard Hat (Blue)</td>
-												<td>10 pcs</td>
+												<td>80 pcs</td>
 												<td>50 pcs</td>
-												<td>60 pcs</td>
 												<td>15 pcs</td>
 												<td>02-10-2020</td>
-												<td></td>
 												<td class="col-md-1">
-													<button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target="#updateModal"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i> <span class="sr-only">Update Stock</span></a>
+													<button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target="#adjustModal"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i> <span class="sr-only">Adjust</span></a>
 												</td>
 												<td class="col-md-1">
-													<button type="button" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-remove" aria-hidden="true"></i> <span class="sr-only">Remove</span></a>
+													<button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#undoModal"><i class="glyphicon glyphicon-repeat" aria-hidden="true"></i> <span class="sr-only">Undo</span></button>
 												</td>
 											</tr>
-											<tr class="success">
+											<tr>
 												<th scope="row">2</th>
 												<td>Hard Hat (Yellow)</td>
-												<td>20 pcs</td>
-												<td>29 pcs</td>
-												<td>49 pcs</td>
-												<td>10 pcs</td>
+												<td>79 pcs</td>
+												<td>30 pcs</td>
+												<td>15 pcs</td>
 												<td>02-10-2019</td>
-												<td></td>
 												<td class="col-md-1">
-													<button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target="#updateModal"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i> <span class="sr-only">Update Stock</span></a>
+													<button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#adjustModal"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i> <span class="sr-only">Adjust</span></a>
 												</td>
 												<td class="col-md-1">
-													<button type="button" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-remove" aria-hidden="true"></i> <span class="sr-only">Remove</span></button>
+													<button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#undoModal"><i class="glyphicon glyphicon-repeat" aria-hidden="true"></i> <span class="sr-only">Undo</span></button>
 												</td>
 											</tr>
-											<tr class="success">
+											<tr>
 												<th scope="row">3</th>
 												<td>Protective Eyewear</td>
-												<td>40 pcs</td>
-												<td>40 pcs</td>
 												<td>80 pcs</td>
+												<td>40 pcs</td>
 												<td>20 pcs</td>
 												<td>02-10-2018</td>
-												<td>Lorem ipsum dolor.</td>
 												<td class="col-md-1">
-													<button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target="#updateModal"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i> <span class="sr-only">Update Stock</span></a>
+													<button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#adjustModal"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i> <span class="sr-only">Adjust</span></a>
 												</td>
 												<td class="col-md-1">
-													<button type="button" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-remove" aria-hidden="true"></i> <span class="sr-only">Remove</span></button>
+													<button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#undoModal"><i class="glyphicon glyphicon-repeat" aria-hidden="true"></i> <span class="sr-only">Undo</span></button>
 												</td>
 											</tr>
-											<tr class="success">
+											<tr>
 												<th scope="row">4</th>
 												<td>Face Shield</td>
-												<td>30 pcs</td>
-												<td>70 pcs</td>
-												<td>100 pcs</td>
 												<td>10 pcs</td>
+												<td>5 pcs</td>
+												<td>5 pcs</td>
 												<td>02-10-2020</td>
-												<td></td>
 												<td class="col-md-1">
-													<button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target="#updateModal"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i> <span class="sr-only">Update Stock</span></a>
+													<button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#adjustModal"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i> <span class="sr-only">Adjust</span></a>
 												</td>
 												<td class="col-md-1">
-													<button type="button" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-remove" aria-hidden="true"></i> <span class="sr-only">Remove</span></button>
+													<button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#undoModal"><i class="glyphicon glyphicon-repeat" aria-hidden="true"></i> <span class="sr-only">Undo</span></button>
 												</td>
 											</tr>
-											<tr class="success">
+											<tr>
 												<th scope="row">5</th>
 												<td>Safety Shoes</td>
-												<td>50 pairs</td>
-												<td>30 pairs</td>
 												<td>80 pairs</td>
+												<td>30 pairs</td>
 												<td>20 pairs</td>
 												<td>02-10-2018</td>
-												<td></td>
 												<td class="col-md-1">
-													<button type="button" class="btn btn-success btn-xs" data-toggle="modal" data-target="#updateModal"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i> <span class="sr-only">Update Stock</span></a>
+													<button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#adjustModal"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i> <span class="sr-only">Update Stock</span></a>
 												</td>
 												<td class="col-md-1">
-													<button type="button" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-remove" aria-hidden="true"></i> <span class="sr-only">Remove</span></button>
+													<button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#undoModal"><i class="glyphicon glyphicon-repeat" aria-hidden="true"></i> <span class="sr-only">Undo</span></button>
 												</td>
 											</tr>
 										</tbody>
@@ -189,8 +164,11 @@
 								</div>
 								<div class="panel-footer">
 									<div class="row">
-										<div class="col-md-12">
-											<button type="button" data-toggle="modal" data-target="#saveModal" class="btn btn-primary">Save Adjustment</button>
+										<div class="col-md-6">
+											<button type="button" data-toggle="modal" data-target="#cancelModal" class="btn btn-danger">Cancel</button>
+										</div>
+										<div class="col-md-6 text-right">
+											<button type="button" data-toggle="modal" data-target="#completeModal" class="btn btn-primary">Complete</button>
 										</div>
 									</div>
 								</div>
@@ -208,28 +186,24 @@
 	</div>
 
 	<!-- Modal -->
-	<div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		<div class="modal-dialog" role="document">
+	<div class="modal fade" id="adjustModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-sm" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					<h4>Hard Hat (Yellow)</h4>
+					<h4>Adjust Stock</h4>
 				</div>
 				<div class="modal-body">
 					<div class="row">
-						<div class="col-md-4">
+						<div class="col-md-12">
 							<div class="form-group">
-								<label for="">Quantity</label>
+								<label for="">Quantity*</label>
 								<input type="number" class="form-control" placeholder="0" min="0" value="60">
 							</div>
-						</div>
-						<div class="col-md-4">
 							<div class="form-group">
 								<label for="">Reorder Point</label>
 								<input type="number" class="form-control" placeholder="0" min="0" value="15">
 							</div>
-						</div>
-						<div class="col-md-4">
 							<div class="form-group">
 								<label for="">Expiration Date</label>
 								<input type="date" class="form-control">
@@ -238,10 +212,7 @@
 					</div>
 					<div class="row">
 						<div class="col-md-12">
-							<div class="form-group">
-								<label for="">Remarks</label>
-								<textarea class="form-control" rows="4"></textarea>
-							</div>
+							<p><em>All fields marked with an asterisk (*) are required.</em></p>
 						</div>
 					</div>
 				</div>
@@ -253,19 +224,55 @@
 		</div>
 	</div>
 
+	<div class="modal fade" id="undoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-sm" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4>Undo Changes</h4>
+				</div>
+				<div class="modal-body">
+					<p>Are you sure you want to undo the changes made on this equipment?</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+					<button type="submit" class="btn btn-danger" data-dismiss="modal">Undo</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="cancelModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4>Cancel Changes</h4>
+				</div>
+				<div class="modal-body">
+					<p>Are you sure you want to cancel all the changes made on this batch?</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+					<button type="submit" class="btn btn-danger" data-dismiss="modal">Undo</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<div class="modal fade" id="saveModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					<h4>Save Batch Adjustment</h4>
+					<h4>Adjust Batch</h4>
 				</div>
 				<div class="modal-body">
 					<p>Are you sure you want to save the adjustments on this batch?</p>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-					<button type="submit" class="btn btn-primary" data-dismiss="modal">Save</button>
+					<button type="submit" class="btn btn-warning" data-dismiss="modal">Adjust</button>
 				</div>
 			</div>
 		</div>
