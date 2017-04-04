@@ -13,26 +13,23 @@
 
 	<div class="sidebar">
 		<div class="sidebar-logo">
-			<!-- <a href="#"><img src="images/db-logo.png" alt=""></a> -->
+			<a href="#"><h4>AGUS 6/7 PPE IMS</h4></a>
 		</div>
-		<div class="sidebar-user">
+		<div class="sidebar-user clearfix">
 			<div class="sidebar-user-pic"></div>
 			<div class="sidebar-user-name">
-				<span>Gene Manlimos</span>
+				<span>Rolando Lemence</span>
 				<span>Safety Officer</span>
 			</div>
 		</div>
 		<div class="sidebar-nav">
 			<ul>
 				<li><a href="index.html">Dashboard</a></li>
-				<li class="separator"></li>
 				<li><a href="equipment.html">Equipment</a></li>
 				<li><a href="work-center.html">Work Center</a></li>
 				<li><a href="personnel.html">Personnel</a></li>
-				<li class="separator"></li>
 				<li><a href="equipment-batch.html">Equipment Batch</a></li>
 				<li><a href="equipment-issuance.html">Equipment Issuance</a></li>
-				<li class="separator"></li>
 				<li><a href="account.html">Account Settings</a></li>
 			</ul>
 		</div>
@@ -42,6 +39,15 @@
 		<nav class="navbar navbar--blue navbar-static-top">
 			<div class="container-fluid">
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<div class="navbar-left">
+						<ul class="navbar-breadcrumbs list-inline">
+							<li><a href="index.html">Dashboard</a></li>
+							<li>/</li>
+							<li><a href="equipment-issuance.html">Issuance</a></li>
+							<li>/</li>
+							<li>Adjust Issuance</li>
+						</ul>
+					</div>
 					<ul class="nav navbar-nav navbar-right">
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manlimos <spa class="caret"></span></a>
@@ -58,45 +64,17 @@
 				<section class="section">
 					<div class="row">
 						<div class="col-md-12">
-							<ol class="breadcrumb">
-								<li><a href="index.html">Dashboard</a></li>
-								<li><a href="equipment-issuance.html">Issuance</a></li>
-								<li><a href="adjust-equipment-issuance-step-1.html">Adjust Issuance Step 1</a></li>
-								<li class="active">Adjust Issuance Step 2</li>
-							</ol>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
 							<div class="row-header">
-								<div class="row">
-									<div class="col-md-8">
-										<h1 class="page-title">Adjust Issuance Step 2 <small>prepared by G. Manlimos</small></h1>
-									</div>
-									<div class="col-md-4">
-										<div class="text-right">
-											<button type="button" class="btn btn-primary" onclick="window.print();"><i class="glyphicon glyphicon-print" aria-hidden="true"></i> Print Form</button>
-										</div>
-									</div>
-								</div>
+								<h1 class="page-title">Adjust Issuance</h1>
 							</div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-12">
 							<div class="panel panel-default">
-								<div class="panel-heading">
-									<div class="row">
-										<div class="col-md-4">
-											<strong>Batch:</strong> 002
-										</div>
-										<div class="col-md-4">
-											<strong>Completed:</strong> February 10, 2017
-										</div>
-										<div class="col-md-4">
-											<strong>Total Item:</strong> 5
-										</div>
-									</div>
+								<div class="panel-heading text-right">
+									<button type="button" data-toggle="modal" data-target="#addPersonnelModal" class="btn btn-primary"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i> Add</button>
+									<button type="button" class="btn btn-info" onclick="window.print();"><i class="glyphicon glyphicon-print" aria-hidden="true"></i> Print</button>
 								</div>
 								<div class="table-responsive">
 									<table class="table table-bordered">
@@ -186,7 +164,7 @@
 					</div>
 					<div class="row">
 						<div class="col-md-12">
-							<a href="adjust-equipment-issuance-step-1.html" class="btn btn-default">Back</a>
+							<a href="equipment-issuance.html" class="btn btn-default">Back</a>
 						</div>
 					</div>
 				</section>
@@ -195,6 +173,109 @@
 	</div>
 
 	<!-- Modal -->
+	<div class="modal fade" id="addPersonnelModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Add/Select Personnel</h4>
+				</div>
+				<div class="modal-body">
+					<p>Select the personnel you want to add in this issuance.</p>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<div class="btn-group">
+								<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Filter <span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li><a href="#">All</a></li>
+									<li><a href="#">Agus 6 HEP (Maintenance)</a></li>
+									<li><a href="#">Agus 7 HEP (Technical)</a></li>
+									<li><a href="#">Agus 7 HEP (Maintenance)</a></li>
+									<li><a href="#">Maintenance</a></li>
+									<li><a href="#">Office of the Plant Manager</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="table-responsive max-height-300">
+							<table class="table table-bordered">
+								<thead>
+									<tr>
+										<th class="col-md-2"><input type="checkbox"> Select</th>
+										<th>Name</th>
+										<th>Work Center</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><input type="checkbox"></td>
+										<td>Alfeche, Wilfredo A.</td>
+										<td>Agus 6 HEP (Maintenance)</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox"></td>
+										<td>Alfeche, Wilfredo A.</td>
+										<td>Agus 6 HEP (Maintenance)</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox"></td>
+										<td>Alfeche, Wilfredo A.</td>
+										<td>Agus 6 HEP (Maintenance)</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox"></td>
+										<td>Alfeche, Wilfredo A.</td>
+										<td>Agus 6 HEP (Maintenance)</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox"></td>
+										<td>Alfeche, Wilfredo A.</td>
+										<td>Agus 6 HEP (Maintenance)</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox"></td>
+										<td>Alfeche, Wilfredo A.</td>
+										<td>Agus 6 HEP (Maintenance)</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox"></td>
+										<td>Alfeche, Wilfredo A.</td>
+										<td>Agus 6 HEP (Maintenance)</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox"></td>
+										<td>Alfeche, Wilfredo A.</td>
+										<td>Agus 6 HEP (Maintenance)</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox"></td>
+										<td>Alfeche, Wilfredo A.</td>
+										<td>Agus 6 HEP (Maintenance)</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox"></td>
+										<td>Alfeche, Wilfredo A.</td>
+										<td>Agus 6 HEP (Maintenance)</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox"></td>
+										<td>Alfeche, Wilfredo A.</td>
+										<td>Agus 6 HEP (Maintenance)</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+					<button type="submit" class="btn btn-primary">Save</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<div class="modal fade" id="saveModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">

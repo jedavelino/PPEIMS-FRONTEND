@@ -13,26 +13,23 @@
 
 	<div class="sidebar">
 		<div class="sidebar-logo">
-			<!-- <a href="#"><img src="images/db-logo.png" alt=""></a> -->
+			<a href="#"><h4>AGUS 6/7 PPE IMS</h4></a>
 		</div>
-		<div class="sidebar-user">
+		<div class="sidebar-user clearfix">
 			<div class="sidebar-user-pic"></div>
 			<div class="sidebar-user-name">
-				<span>Gene Manlimos</span>
+				<span>Rolando Lemence</span>
 				<span>Safety Officer</span>
 			</div>
 		</div>
 		<div class="sidebar-nav">
 			<ul>
 				<li><a href="index.html">Dashboard</a></li>
-				<li class="separator"></li>
 				<li><a href="equipment.html">Equipment</a></li>
 				<li><a href="work-center.html">Work Center</a></li>
 				<li><a href="personnel.html">Personnel</a></li>
-				<li class="separator"></li>
 				<li><a href="equipment-batch.html">Equipment Batch</a></li>
 				<li><a href="equipment-issuance.html">Equipment Issuance</a></li>
-				<li class="separator"></li>
 				<li><a href="account.html">Account Settings</a></li>
 			</ul>
 		</div>
@@ -42,6 +39,17 @@
 		<nav class="navbar navbar--blue navbar-static-top">
 			<div class="container-fluid">
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<div class="navbar-left">
+						<ul class="navbar-breadcrumbs list-inline">
+							<li><a href="index.html">Dashboard</a></li>
+							<li>/</li>
+							<li><a href="equipment-issuance.html">Issuance</a></li>
+							<li>/</li>
+							<li><a href="edit-equipment-issuance-step-2.html">Edit Issuance</a></li>
+							<li>/</li>
+							<li>Issue Equipment</li>
+						</ul>
+					</div>
 					<ul class="nav navbar-nav navbar-right">
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manlimos <spa class="caret"></span></a>
@@ -58,17 +66,6 @@
 				<section class="section">
 					<div class="row">
 						<div class="col-md-12">
-							<ol class="breadcrumb">
-								<li><a href="index.html">Dashboard</a></li>
-								<li><a href="equipment-issuance.html">Equipment Issuance</a></li>
-								<li><a href="edit-equipment-issuance-step-1.html">Edit Issuance Step 1</a></li>
-								<li><a href="edit-equipment-issuance-step-2.html">Edit Issuance Step 2</a></li>
-								<li class="active">Issue Equipment</li>
-							</ol>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
 							<div class="row-header">
 								<h1 class="page-title">Issue Equipment to Alfeche, Wilfredo A.</h1>
 							</div>
@@ -77,16 +74,19 @@
 					<div class="row">
 						<div class="col-md-12">
 							<div class="panel panel-default">
+								<div class="panel-heading text-right">
+									<button type="button" data-toggle="modal" data-target="#addEquipmentModal" class="btn btn-primary"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i> Add</button>
+								</div>
 								<div class="table-responsive">
 									<table class="table table-bordered">
 										<thead>
 											<tr>
 												<th class="col-md-1">No.</th>
 												<th>Particulars</th>
-												<th>Description</th>
 												<th>On Stock</th>
 												<th>Issued Stock</th>
 												<th>Total Stock</th>
+												<th>Date Issued</th>
 												<th class="col-md-1">Issue</th>
 											</tr>
 										</thead>
@@ -94,10 +94,10 @@
 											<tr class="success">
 												<th class="col-md-1" scope="row">1</th>
 												<td>Hard Hat (Blue)</td>
-												<td>Lorem ipsum dolor sit amet.</td>
 												<td>80 pcs</td>
 												<td>1 pcs</td>
 												<td>79 pcs</td>
+												<td>03-21-2017</td>
 												<td class="col-md-1">
 													<button type="button" data-toggle="modal" data-target="#issueModal" class="btn btn-success btn-xs"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i> <span class="sr-only">Issue</span></button>
 												</td>
@@ -105,10 +105,10 @@
 											<tr class="success">
 												<th class="col-md-1" scope="row">2</th>
 												<td>Hard Hat (Yellow)</td>
-												<td>Lorem ipsum dolor sit amet.</td>
 												<td>50 pcs</td>
 												<td>1 pcs</td>
 												<td>49 pcs</td>
+												<td>03-21-2017</td>
 												<td class="col-md-1">
 													<button type="button" data-toggle="modal" data-target="#issueModal" class="btn btn-success btn-xs"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i> <span class="sr-only">Issue</span></button>
 												</td>
@@ -116,10 +116,10 @@
 											<tr class="success">
 												<th class="col-md-1" scope="row">3</th>
 												<td>Protective Eyewear</td>
-												<td>Lorem ipsum dolor sit amet.</td>
 												<td>35 pcs</td>
 												<td>1 pcs</td>
 												<td>34 pcs</td>
+												<td>03-21-2017</td>
 												<td class="col-md-1">
 													<button type="button" data-toggle="modal" data-target="#issueModal" class="btn btn-success btn-xs"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i> <span class="sr-only">Issue</span></button>
 												</td>
@@ -127,10 +127,10 @@
 											<tr class="success">
 												<th class="col-md-1" scope="row">4</th>
 												<td>Face Shield</td>
-												<td>Lorem ipsum dolor sit amet.</td>
 												<td>40 pcs</td>
 												<td>2 pcs</td>
 												<td>38 pcs</td>
+												<td>03-21-2017</td>
 												<td class="col-md-1">
 													<button type="button" data-toggle="modal" data-target="#issueModal" class="btn btn-success btn-xs"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i> <span class="sr-only">Issue</span></button>
 												</td>
@@ -138,8 +138,8 @@
 											<tr>
 												<th class="col-md-1" scope="row">5</th>
 												<td>Safety Shoes</td>
-												<td>Lorem ipsum dolor sit amet.</td>
 												<td>20 pairs</td>
+												<td>0</td>
 												<td>0</td>
 												<td></td>
 												<td class="col-md-1">
@@ -167,6 +167,89 @@
 						</div>
 					</div>
 				</section>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="addEquipmentModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Add/Select Equipment</h4>
+				</div>
+				<div class="modal-body">
+					<p>Select the equipment you want to issue in this personnel.</p>
+					<div class="panel panel-default">
+						<div class="table-responsive max-height-300">
+							<table class="table table-bordered">
+								<thead>
+									<tr>
+										<th class="col-md-2"><input type="checkbox"> Select</th>
+										<th>Particulars</th>
+										<th>Description</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><input type="checkbox"></td>
+										<td>Hard Hat (Yellow)</td>
+										<td>Lorem ipsum dolor sit amet.</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox"></td>
+										<td>Hard Hat (Yellow)</td>
+										<td>Lorem ipsum dolor sit amet.</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox"></td>
+										<td>Hard Hat (Yellow)</td>
+										<td>Lorem ipsum dolor sit amet.</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox"></td>
+										<td>Hard Hat (Yellow)</td>
+										<td>Lorem ipsum dolor sit amet.</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox"></td>
+										<td>Hard Hat (Yellow)</td>
+										<td>Lorem ipsum dolor sit amet.</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox"></td>
+										<td>Hard Hat (Yellow)</td>
+										<td>Lorem ipsum dolor sit amet.</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox"></td>
+										<td>Hard Hat (Yellow)</td>
+										<td>Lorem ipsum dolor sit amet.</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox"></td>
+										<td>Hard Hat (Yellow)</td>
+										<td>Lorem ipsum dolor sit amet.</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox"></td>
+										<td>Hard Hat (Yellow)</td>
+										<td>Lorem ipsum dolor sit amet.</td>
+									</tr>
+									<tr>
+										<td><input type="checkbox"></td>
+										<td>Hard Hat (Yellow)</td>
+										<td>Lorem ipsum dolor sit amet.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+					<button type="submit" class="btn btn-primary">Save</button>
+				</div>
 			</div>
 		</div>
 	</div>
