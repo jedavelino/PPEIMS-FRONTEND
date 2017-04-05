@@ -75,7 +75,7 @@
 						<div class="col-md-12">
 							<div class="panel panel-default">
 								<div class="panel-heading text-right">
-									<button type="button" data-toggle="modal" data-target="#addEquipmentModal" class="btn btn-primary"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i> Add</button>
+									<button type="button" data-toggle="modal" data-target="#addEquipmentModal" class="btn btn-primary"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i> Equipment</button>
 								</div>
 								<div class="table-responsive max-height-300">
 									<table class="table table-bordered">
@@ -83,7 +83,7 @@
 											<tr>
 												<th class="col-md-1">No.</th>
 												<th>Particulars</th>
-												<th>In Stock</th>
+												<th>In Stock <small>(Available)</small></th>
 												<th>Issued</th>
 												<th>Received</th>
 												<th class="col-md-1">Add</th>
@@ -152,7 +152,14 @@
 									</table>
 								</div>
 								<div class="panel-footer">
-									<button type="button" data-toggle="modal" data-target="#removeAllModal" class="btn btn-danger">Remove All</button>
+									<div class="row">
+										<div class="col-md-6">
+											<button type="button" data-toggle="modal" data-target="#removeAllModal" class="btn btn-danger">Remove All</button>
+										</div>
+										<div class="col-md-6 text-right">
+											<button type="submit" class="btn btn-primary">Done</button>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -309,7 +316,7 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					<h4 class="modal-title" id="myModalLabel">Remove Added Equipment</h4>
+					<h4 class="modal-title" id="myModalLabel">Remove Equipment</h4>
 				</div>
 				<div class="modal-body">
 					<p>Are you sure you want to remove all added equipment?</p>

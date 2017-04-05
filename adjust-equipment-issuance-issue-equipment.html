@@ -75,7 +75,7 @@
 						<div class="col-md-12">
 							<div class="panel panel-default">
 								<div class="panel-heading text-right">
-									<button type="button" data-toggle="modal" data-target="#addEquipmentModal" class="btn btn-primary"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i> Add</button>
+									<button type="button" data-toggle="modal" data-target="#addEquipmentModal" class="btn btn-primary"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i> Equipment</button>
 								</div>
 								<div class="table-responsive">
 									<table class="table table-bordered">
@@ -83,10 +83,9 @@
 											<tr>
 												<th class="col-md-1">No.</th>
 												<th>Particulars</th>
-												<th>On Stock</th>
+												<th>In Stock <small>(Available)</small></th>
 												<th>Issued</th>
-												<th>Total Stock</th>
-												<th>Date Issued</th>
+												<th>Received</th>
 												<th class="col-md-1">Issue</th>
 											</tr>
 										</thead>
@@ -94,45 +93,41 @@
 											<tr class="success">
 												<th class="col-md-1" scope="row">1</th>
 												<td>Hard Hat (Blue)</td>
-												<td>80 pcs</td>
-												<td>1 pcs</td>
 												<td>79 pcs</td>
+												<td>1 pcs</td>
 												<td>03-21-2017</td>
 												<td class="col-md-1">
 													<button type="button" data-toggle="modal" data-target="#issueModal" class="btn btn-success btn-xs"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i> <span class="sr-only">Issue</span></button>
 												</td>
 											</tr>
-											<tr class="success">
+											<tr>
 												<th class="col-md-1" scope="row">2</th>
 												<td>Hard Hat (Yellow)</td>
-												<td>50 pcs</td>
-												<td>1 pcs</td>
 												<td>49 pcs</td>
+												<td>1 pcs</td>
 												<td>03-21-2017</td>
 												<td class="col-md-1">
-													<button type="button" data-toggle="modal" data-target="#issueModal" class="btn btn-success btn-xs"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i> <span class="sr-only">Issue</span></button>
+													<button type="button" data-toggle="modal" data-target="#issueModal" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i> <span class="sr-only">Issue</span></button>
 												</td>
 											</tr>
-											<tr class="success">
+											<tr>
 												<th class="col-md-1" scope="row">3</th>
 												<td>Protective Eyewear</td>
-												<td>35 pcs</td>
-												<td>1 pcs</td>
 												<td>34 pcs</td>
+												<td>1 pcs</td>
 												<td>03-21-2017</td>
 												<td class="col-md-1">
-													<button type="button" data-toggle="modal" data-target="#issueModal" class="btn btn-success btn-xs"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i> <span class="sr-only">Issue</span></button>
+													<button type="button" data-toggle="modal" data-target="#issueModal" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i> <span class="sr-only">Issue</span></button>
 												</td>
 											</tr>
-											<tr class="success">
+											<tr>
 												<th class="col-md-1" scope="row">4</th>
 												<td>Face Shield</td>
-												<td>40 pcs</td>
-												<td>2 pcs</td>
 												<td>38 pcs</td>
+												<td>2 pcs</td>
 												<td>03-21-2017</td>
 												<td class="col-md-1">
-													<button type="button" data-toggle="modal" data-target="#issueModal" class="btn btn-success btn-xs"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i> <span class="sr-only">Issue</span></button>
+													<button type="button" data-toggle="modal" data-target="#issueModal" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i> <span class="sr-only">Issue</span></button>
 												</td>
 											</tr>
 											<tr>
@@ -140,21 +135,29 @@
 												<td>Safety Shoes</td>
 												<td>20 pairs</td>
 												<td>0</td>
-												<td>0</td>
 												<td></td>
 												<td class="col-md-1">
 													<button type="button" data-toggle="modal" data-target="#issueModal" class="btn btn-default btn-xs"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i> <span class="sr-only">Issue</span></button>
 												</td>
+											</tr>
+											<tr class="active">
+												<th class="col-md-1" scope="row">Total</th>
+												<td></td>
+												<td></td>
+												<th scope="row">5</th>
+												<td></td>
+												<td></td>
 											</tr>
 										</tbody>
 									</table>
 								</div>
 								<div class="panel-footer">
 									<div class="row">
-										<div class="col-md-12">
-											<div class="text-right">
-												<button type="button" data-toggle="modal" data-target="#removeModal" class="btn btn-danger">Remove All</button>
-											</div>
+										<div class="col-md-6">
+											<button type="button" data-toggle="modal" data-target="#removeModal" class="btn btn-danger">Remove All</button>
+										</div>
+										<div class="col-md-6 text-right">
+											<button type="submit" class="btn btn-primary">Done</button>
 										</div>
 									</div>
 								</div>
@@ -280,7 +283,7 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-					<h4 class="modal-title" id="myModalLabel">Remove Added Equipment</h4>
+					<h4 class="modal-title" id="myModalLabel">Remove Equipment</h4>
 				</div>
 				<div class="modal-body">
 					<p>Are you sure you want to remove all added equipment?</p>
