@@ -32,8 +32,7 @@
 				<li><a href="equipment-batch.html">Equipment Batch</a></li>
 				<li><a href="equipment-issuance.html">Equipment Issuance</a></li>
 				<li><a href="inventory-report.html">Inventory Report</a></li>
-				<li><a href="issuance-report.html">Issuance Report</a></li>
-				<li><a href="statistics.html">Graphs &amp; Statistics</a></li>
+				<li><a href="inventory-statistics.html">Graphs &amp; Statistics</a></li>
 				<li><a href="account.html">Account Settings</a></li>
 			</ul>
 		</div>
@@ -65,10 +64,56 @@
 										<h1 class="page-title">PPE Inventory <small>as of March 20, 2017</small></h1>
 									</div>
 									<div class="col-md-4 text-right">
-										<a href="low-supply.html" class="btn btn-warning">Low Supplies <span class="badge">10</span></a>
-										<a href="expired.html" class="btn btn-danger">Expired <span class="badge">5</span></a>
+										<a href="low-supply-equipment.html" class="btn btn-warning">Low Supplies <span class="badge">10</span></a>
+										<a href="expired-equipment.html" class="btn btn-danger">Expired <span class="badge">5</span></a>
 									</div>
 								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-3">
+							<div class="alert alert-success" role="alert">
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<p>Looks like you have a pending issuance, click <strong>Resume</strong> to resume.</p>
+								<p>
+									<a href="edit-equipment-issuance-step-2.html" class="btn btn-success"><i class="glyphicon glyphicon-share-alt" aria-hidden="true"></i> Resume</a>
+								</p>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="alert alert-info" role="alert">
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<p>Would you like to create an inventory report, click <strong>Create</strong> to create.</p>
+								<p>
+									<a href="create-inventory-report.html" class="btn btn-primary"><i class="glyphicon glyphicon-plus" aria-hidden="true"></i> Create</a>
+								</p>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="alert alert-warning" role="alert">
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<p>Looks like you have <strong>10</strong> supplies below their threshold, click <strong>View</strong> to view them.</p>
+								<p>
+									<a href="low-supply-equipment.html" class="btn btn-warning"><i class="glyphicon glyphicon-search" aria-hidden="true"></i> View</a>
+								</p>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="alert alert-danger" role="alert">
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+								<p>Looks like you have <strong>5</strong> supplies that are expired, click <strong>View</strong> to view them.</p>
+								<p>
+									<a href="expired-equipment.html" class="btn btn-danger"><i class="glyphicon glyphicon-search" aria-hidden="true"></i> View</a>
+								</p>
 							</div>
 						</div>
 					</div>
@@ -95,7 +140,6 @@
 												<th>No.</th>
 												<th>Particulars</th>
 												<th>In Stock</th>
-												<th>Reserved</th>
 												<th>Issued</th>
 											</tr>
 										</thead>
@@ -105,20 +149,17 @@
 												<td>Hard Hat (Blue)</td>
 												<td>14 pcs</td>
 												<td>10 pcs</td>
-												<td>0 pcs</td>
 											</tr>
 											<tr>
 												<th scope="row">2</th>
 												<td>Hard Hat (Yellow)</td>
 												<td>49 pcs</td>
 												<td>12 pcs</td>
-												<td>0 pcs</td>
 											</tr>
 											<tr>
 												<th scope="row">3</th>
 												<td>Protective Eyewear</td>
 												<td>15 pcs</td>
-												<td>5 pcs</td>
 												<td>85 pcs</td>
 											</tr>
 											<tr>
@@ -126,14 +167,12 @@
 												<td>Face Shield</td>
 												<td>10 pcs</td>
 												<td>5 pcs</td>
-												<td>0 pcs</td>
 											</tr>
 											<tr>
 												<th scope="row">5</th>
 												<td>Safety Shoes</td>
 												<td>13 pairs</td>
 												<td>2 pairs</td>
-												<td>110 pairs</td>
 											</tr>
 										</tbody>
 									</table>
@@ -141,38 +180,7 @@
 							</div>
 						</div>
 					</div>
-					<!-- <div class="row">
-						<div class="col-md-6">
-							<div class="panel panel-default">
-								<div class="panel-heading">
-									<h4>Overview of Low Supply Personal Protective Equipment</h4>
-								</div>
-								<table class="table table-bordered">
-									<thead>
-										<tr>
-											<th>No.</th>
-											<th>Particulars</th>
-											<th>On Stock</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<th scope="row">1</th>
-											<td>Face Shield</td>
-											<td>0 pcs</td>
-										</tr>
-										<tr>
-											<th scope="row">2</th>
-											<td>Safety Shoes</td>
-											<td>0 pcs</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
-					</div> -->
 				</section>
-
 			</div>
 		</div>
 	</div>
