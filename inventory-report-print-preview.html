@@ -15,11 +15,93 @@
 			background-color: #e1e1e1;
 			padding-top: 50px;
 		}
+		.print-preview-header-top,
+		.print-preview-footer {
+			display: none;
+		}
+		.print-preview-header-bottom {
+			margin-bottom: 20px;
+		}
+		.print-preview-header-bottom h4 {
+			font-size: 22px;
+			font-family: 'source_sans_probold';
+		}
+		@media print {
+			@page {
+				margin: 0;
+			}
+			body {
+				font-family: sans-serif;
+				padding-top: 0;
+				margin: 40px 20px;
+			}
+			.panel-heading,
+			.panel-footer {
+				display: none;
+			}
+			.container {
+				width: 100%;
+			}
+			.print-preview-header-top {
+				position: relative;
+				display: block;
+				width: 100%;
+				margin-bottom: 20px;
+				padding-top: 10px;
+			}
+			.print-preview-header-top img {
+				display: block;
+				width: 64px;
+				height: auto;
+				position: absolute;
+				top: 0;
+				left: 12%;
+			}
+			.print-preview-header-top p {
+				margin-bottom: 3px;
+				font-size: 16px;
+				line-height: 16px;
+			}
+			.print-preview-header-bottom h4 {
+				font-size: 18px;
+				margin-bottom: 5px;
+			}
+			.print-preview-footer {
+				width: 100%;
+				display: block;
+			}
+			.print-preview-footer-left,
+			.print-preview-footer-right {
+				width: 50%;
+				float: left;
+			}
+
+			.print-preview-footer-left p,
+			.print-preview-footer-right p {
+				margin-bottom: 30px;
+			}
+
+			.print-preview-footer-name p:first-child {
+				margin-bottom: 0;
+				font-weight: 700;
+				text-transform: uppercase;
+			}
+		}
 	</style>
 </head>
 <body>
 	
 	<div class="container">
+		<div class="print-preview-header-top text-center">
+			<img src="images/logo.png">
+			<p><small>NATIONAL POWER CORPORATION</small></p>
+			<p>AGUS 6/7 HYDROELECTRIC PLANT COMPLEX</p>
+			<p><small>MINDANAO GENERATION</small></p>
+		</div>
+		<div class="print-preview-header-bottom text-center">
+			<h4>PERSONAL PROTECTIVE EQUIPMENT INVENTORY</h4>
+			<p>As of March 20, 2017</p>
+		</div>
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1">
 				<div class="panel panel-default">
@@ -29,18 +111,18 @@
 								<h4>Report Preview</h4>
 							</div>
 							<div class="col-md-4 text-right">
-								<a href="#" role="button" class="btn btn-info"><i class="glyphicon glyphicon-print" aria-hidden="true"></i> Print Report</a>
+								<a href="#" role="button" class="btn btn-info printBtn"><i class="glyphicon glyphicon-print" aria-hidden="true"></i> Print Report</a>
 							</div>
 						</div>
 					</div>
-					<div class="table-responsive max-height-350">
+					<div class="table-responsive">
 						<table class="table table-bordered">
 							<thead>
 								<tr>
 									<th>No.</th>
 									<th>Particulars</th>
 									<th>In Stock</th>
-									<th class="col-md-7">Remarks</th>
+									<th>Remarks</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -48,45 +130,54 @@
 									<th scope="row">1</th>
 									<td>Hard Hat (Blue)</td>
 									<td>14 pcs</td>
-									<td class="col-md-7">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, numquam!</td>
+									<td>Used by CHO personnel</td>
 								</tr>
 								<tr>
 									<th scope="row">2</th>
 									<td>Hard Hat (Yellow)</td>
 									<td>49 pcs</td>
-									<td class="col-md-7"></td>
+									<td></td>
 								</tr>
 								<tr>
 									<th scope="row">3</th>
 									<td>Protective Eyewear</td>
 									<td>15 pcs</td>
-									<td class="col-md-7"></td>
+									<td></td>
 								</tr>
 								<tr>
 									<th scope="row">4</th>
 									<td>Face Shield</td>
 									<td>10 pcs</td>
-									<td class="col-md-7"></td>
+									<td></td>
 								</tr>
 								<tr>
 									<th scope="row">5</th>
 									<td>Safety Shoes</td>
 									<td>13 pairs</td>
-									<td class="col-md-7"></td>
+									<td></td>
 								</tr>
 							</tbody>
 						</table>
 					</div>
-					<div class="panel-footer">
-						<div class="row">
-							<div class="col-md-6">
-								<a href="edit-inventory-report.html" class="btn btn-default">Back</a>
-							</div>
-							<div class="col-md-6 text-right">
-								<a href="inventory-report.html" class="btn btn-primary">Done</a>
-							</div>
-						</div>
+					<div class="panel-footer text-right">
+						<a href="inventory-report.html" class="btn btn-primary">Done</a>
 					</div>
+				</div>
+			</div>
+		</div>
+		<div class="print-preview-footer text-center">
+			<div class="print-preview-footer-left">
+				<p>Prepared by:</p>
+				<div class="print-preview-footer-name">
+					<p>RS LEMENCE</p>
+					<p>Safety Officer, Agus 6/7 HEPC</p>
+				</div>
+			</div>
+			<div class="print-preview-footer-right">
+				<p>Noted by:</p>
+				<div class="print-preview-footer-name">
+					<p>MB JABAY</p>
+					<p>OIC PTS, Agus 6/7 HEPC</p>
 				</div>
 			</div>
 		</div>
